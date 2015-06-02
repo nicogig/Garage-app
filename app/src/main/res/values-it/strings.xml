@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Garage</string>
+    <string name="hello_world">Ciao mondo!</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="snackbar_text">Azione Inviata</string>
+    <string name="title_activity_intro">Introduzione</string>
+    <string name="title_activity_intro__name">Intro_Name</string>
+    <string name="title_activity_intro__auth">Intro_Auth</string>
+    <string name="title_activity_intro__done">Intro_Done</string>
+    <string name="title_activity_splash">Garage</string>
+    <string name="himain">Ciao,</string>
+    <string name="greetingmain">Benvenuto su Garage!</string>
+    <string name="garagedoor">Garage</string>
+    <string name="notavailable">Feature non ancora disponibile.</string>
+    <string name="startbtn">INIZIA</string>
+    <string name="nextbtn">AVANTI</string>
+    <string name="finishbtn">FINE</string>
+    <string name="introtext">Controlla la tua casa. Ovunque.</string>
+    <string name="namehint">Nome</string>
+    <string name="surnamehint">Cognome</string>
+    <string name="introname">Come ti chiami?</string>
+    <string name="introauth">Autenticati a Garage.</string>
+    <string name="iphint">IP o indirizzo web</string>
+    <string name="passhint">Password</string>
+    <string name="introdone">Tutto apposto!</string>
+    <string name="title_activity_settings">Impostazioni</string>
+    <string name="reset">Reinposta App</string>
+    <string name="usermodify">Modifica Impostazioni Utente</string>
+    <string name="servermodify">Modifica impostazioni di Garage</string>
+    <string name="about">Informazioni su Garage</string>
+    <string name="version">v1.0 Material</string>
+    <string name="buildversion">Build 02062015</string>
+    <string name="title_activity_user__settings">Impostazioni Utente</string>
+    <string name="title_activity_garage__settings">Impostazioni di Garage</string>
+    <string name="title_activity_about__app">Informazioni su Garage</string>
+    <string name="appwidget_text">ESEMPIO</string>
+    <string name="add_widget">Aggiungi Widget</string>
+    <string name="snackbar_shrug">  ¯ \ _ (ツ) _ / ¯  </string>
+    <string name="dialog_reset_title">Ripristinare Garage?</string>
+    <string name="dialog_reset_message">Se procedi, perderai qualsiasi personalizzazione che hai applicato e l\'app si ripristinerà.</string>
+    <string name="proceed">Procedi</string>
+    <string name="cancel">Annulla</string>
+    <string name="ok">OK</string>
+    <string name="snackbar_egg">Material wohoo!</string>
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nicolagigante.garage" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Intro"
+            android:label="@string/title_activity_intro"
+            android:noHistory="true"
+            android:theme="@style/Intro1" >
+        </activity>
+        <activity
+            android:name=".Intro_Name"
+            android:label="@string/title_activity_intro__name"
+            android:noHistory="true"
+            android:theme="@style/Intro2" >
+        </activity>
+        <activity
+            android:name=".Intro_Auth"
+            android:label="@string/title_activity_intro__auth"
+            android:noHistory="true"
+            android:theme="@style/Intro3" >
+        </activity>
+        <activity
+            android:name=".Intro_Done"
+            android:label="@string/title_activity_intro__done"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_splash"
+            android:noHistory="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Redirect"
+            android:label="@string/title_activity_splash"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nicolagigante.garage.MainActivity" />
+        </activity>
+        <activity
+            android:name=".User_Settings"
+            android:label="@string/title_activity_user__settings"
+            android:parentActivityName=".Settings"
+            android:theme="@style/UserSettings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nicolagigante.garage.Settings" />
+        </activity>
+        <activity
+            android:name=".Garage_Settings"
+            android:label="@string/title_activity_garage__settings"
+            android:parentActivityName=".Settings"
+            android:theme="@style/GarageSettings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nicolagigante.garage.Settings" />
+        </activity>
+        <activity
+            android:name=".About_App"
+            android:label="@string/title_activity_about__app"
+            android:parentActivityName=".Settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nicolagigante.garage.Settings" />
+        </activity>
+
+    </application>
+
+</manifest>

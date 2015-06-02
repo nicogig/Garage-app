@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#009688</color>
+    <color name="primary_dark">#00897B</color>
+    <color name="accent">#00897B</color>
+    <color name="white">#ffffff</color>
+    <color name="cyan5">#00bcd4</color>
+    <color name="cyan6">#00acc1</color>
+    <color name="cyan7">#0097a7</color>
+    <color name="cyan8">#00838f</color>
+    <color name="teal3">#4db6ac</color>
+    <color name="teal4">#26a69a</color>
+    <color name="greyblue">#546e7a</color>
+</resources>

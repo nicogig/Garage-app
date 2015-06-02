@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Garage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="snackbar_text">Action Sent</string>
+    <string name="title_activity_intro">Intro</string>
+    <string name="title_activity_intro__name">Intro_Name</string>
+    <string name="title_activity_intro__auth">Intro_Auth</string>
+    <string name="title_activity_intro__done">Intro_Done</string>
+    <string name="title_activity_splash">Garage</string>
+    <string name="himain">Hi, </string>
+    <string name="greetingmain">Welcome to Garage!</string>
+    <string name="garagedoor">Garage Door</string>
+    <string name="notavailable">Feature not available yet.</string>
+    <string name="startbtn">START</string>
+    <string name="nextbtn">NEXT</string>
+    <string name="finishbtn">FINISH</string>
+    <string name="introtext">Control your house. From everywhere.</string>
+    <string name="namehint">Name</string>
+    <string name="surnamehint">Surname</string>
+    <string name="introname">What\&apos;s your name?</string>
+    <string name="introauth">Authenticate to Garage.</string>
+    <string name="iphint">IP or Address</string>
+    <string name="passhint">Password</string>
+    <string name="introdone">All Set!</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="reset">Reset App</string>
+    <string name="usermodify">Modify User Settings</string>
+    <string name="servermodify">Modify Garage Settings</string>
+    <string name="about">About Garage</string>
+    <string name="version">v1.0 Material</string>
+    <string name="buildversion">Build 02062015</string>
+    <string name="title_activity_user__settings">User Settings</string>
+    <string name="title_activity_garage__settings">Garage Settings</string>
+    <string name="title_activity_about__app">About Garage</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="snackbar_shrug">  ¯ \ _ (ツ) _ / ¯  </string>
+    <string name="dialog_reset_title">Reset Garage?</string>
+    <string name="dialog_reset_message">If you proceed, you\'ll loose every personalization you\'ve made, and the app will reset.</string>
+    <string name="proceed">Proceed</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="snackbar_egg">Material wohoo!</string>
+
+</resources>

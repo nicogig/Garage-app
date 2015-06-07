@@ -30,8 +30,8 @@
     <string name="usermodify">Modifica Impostazioni Utente</string>
     <string name="servermodify">Modifica impostazioni di Garage</string>
     <string name="about">Informazioni su Garage</string>
-    <string name="version">v1.0 Material</string>
-    <string name="buildversion">Build 02062015</string>
+    <string name="version">v2.0 Material</string>
+    <string name="buildversion">Build 07062015</string>
     <string name="title_activity_user__settings">Impostazioni Utente</string>
     <string name="title_activity_garage__settings">Impostazioni di Garage</string>
     <string name="title_activity_about__app">Informazioni su Garage</string>

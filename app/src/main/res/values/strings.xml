@@ -30,8 +30,8 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify Garage Settings</string>
     <string name="about">About Garage</string>
-    <string name="version">v1.0 Material</string>
-    <string name="buildversion">Build 02062015</string>
+    <string name="version">v2.0 Material</string>
+    <string name="buildversion">Build 07062015</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About Garage</string>

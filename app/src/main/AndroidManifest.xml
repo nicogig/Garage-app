@@ -8,12 +8,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -22,29 +24,34 @@
             android:name=".Intro"
             android:label="@string/title_activity_intro"
             android:noHistory="true"
-            android:theme="@style/Intro1" >
+            android:theme="@style/Intro1"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Intro_Name"
             android:label="@string/title_activity_intro__name"
             android:noHistory="true"
-            android:theme="@style/Intro2" >
+            android:theme="@style/Intro2"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Intro_Auth"
             android:label="@string/title_activity_intro__auth"
             android:noHistory="true"
-            android:theme="@style/Intro3" >
+            android:theme="@style/Intro3"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Intro_Done"
             android:label="@string/title_activity_intro__done"
-            android:noHistory="true" >
+            android:noHistory="true"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Splash"
             android:label="@string/title_activity_splash"
-            android:noHistory="true" >
+            android:noHistory="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
 
@@ -54,12 +61,14 @@
         <activity
             android:name=".Redirect"
             android:label="@string/title_activity_splash"
-            android:noHistory="true" >
+            android:noHistory="true"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Settings"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nicolagigante.garage.MainActivity" />
@@ -68,7 +77,8 @@
             android:name=".User_Settings"
             android:label="@string/title_activity_user__settings"
             android:parentActivityName=".Settings"
-            android:theme="@style/UserSettings">
+            android:theme="@style/UserSettings"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nicolagigante.garage.Settings" />
@@ -77,7 +87,8 @@
             android:name=".Garage_Settings"
             android:label="@string/title_activity_garage__settings"
             android:parentActivityName=".Settings"
-            android:theme="@style/GarageSettings" >
+            android:theme="@style/GarageSettings"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nicolagigante.garage.Settings" />
@@ -85,7 +96,8 @@
         <activity
             android:name=".About_App"
             android:label="@string/title_activity_about__app"
-            android:parentActivityName=".Settings" >
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nicolagigante.garage.Settings" />

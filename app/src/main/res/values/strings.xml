@@ -11,8 +11,8 @@
     <string name="title_activity_intro__done">Intro_Done</string>
     <string name="title_activity_splash">Garage</string>
     <string name="himain">Hi, </string>
-    <string name="greetingmain">Welcome to Garage!</string>
-    <string name="garagedoor">Garage Door</string>
+    <string name="greetingmain">Here\'s what I can do for you.</string>
+    <string name="garagedoor">Open Garage Door</string>
     <string name="notavailable">Feature not available yet.</string>
     <string name="startbtn">START</string>
     <string name="nextbtn">NEXT</string>
@@ -30,8 +30,8 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify Garage Settings</string>
     <string name="about">About Garage</string>
-    <string name="version">v2.0 Material</string>
-    <string name="buildversion">Build 07062015</string>
+    <string name="version">v3.1 Material</string>
+    <string name="buildversion">Build 02012016</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About Garage</string>

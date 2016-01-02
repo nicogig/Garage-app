@@ -10,15 +10,15 @@ import android.preference.PreferenceManager;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 
-/**
- * Created by Nicola on 02/06/2015.
- */
+
 public class Reset_Dialog extends DialogFragment {
     private Context mContext;
 
     public Reset_Dialog(Context context){
         mContext = context;
     }
+
+
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState){

@@ -49,6 +49,16 @@
         <android.support.v7.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:id="@+id/view8"
+            android:text="@string/garagenamemodify"
+            android:textColor="#546e7a"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="goToNameSettings" />
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
             android:id="@+id/view6"
             android:text="@string/reset"
             android:textColor="#546e7a"

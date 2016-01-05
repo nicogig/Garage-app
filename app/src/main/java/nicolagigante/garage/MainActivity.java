@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,6 +32,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.v("Hello", "In the onCreate ");
         setContentView(R.layout.activity_main);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         String name = prefs.getString("Name", "");
@@ -38,6 +40,22 @@ public class MainActivity extends Activity {
         TextView info_text = (TextView)findViewById(R.id.info_text);
         String hi = getString(R.string.himain);
         info_text.setText( hi + " " + name + "!");
+        TextView garage_name = (TextView)findViewById(R.id.textView6);
+        String open = getString(R.string.garagedoor);
+        String garagename = prefs.getString("GarageName", "");
+        garage_name.setText(open + " " + garagename);
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+    }
+
+    @Override
+    public void onRestart(){
+        super.onRestart();
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
     }
 
 

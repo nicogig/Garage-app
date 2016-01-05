@@ -61,6 +61,20 @@
         <item name="android:colorControlHighlight">@color/teal4</item>
     </style>
 
+    <style name="NameGarage" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/teal_name</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/accent_name</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/accent_name</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:colorControlNormal">#ffffff</item>
+        <item name="android:colorControlActivated">#ffffff</item>
+        <item name="android:colorControlHighlight">@color/accent_name</item>
+    </style>
 
     <!-- Settings Styles -->
 
@@ -85,6 +99,17 @@
         <item name="android:colorPrimaryDark">@color/teal4</item>
         <!--   theme UI controls like checkboxes and text fields -->
         <item name="android:colorAccent">@color/teal4</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+    <style name="GarageNameSettings" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/teal_name</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/accent_name</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/accent_name</item>
         <item name="android:textColorPrimary">@color/white</item>
     </style>
 

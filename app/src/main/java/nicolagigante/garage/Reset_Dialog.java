@@ -12,6 +12,9 @@ import android.support.v7.app.AlertDialog;
 
 
 public class Reset_Dialog extends DialogFragment {
+
+    public Reset_Dialog(){}
+
     private Context mContext;
 
     public Reset_Dialog(Context context){

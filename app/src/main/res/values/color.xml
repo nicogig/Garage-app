@@ -11,4 +11,6 @@
     <color name="teal3">#4db6ac</color>
     <color name="teal4">#26a69a</color>
     <color name="greyblue">#546e7a</color>
+    <color name="teal_name">#26a69a</color>
+    <color name="accent_name">#00897b</color>
 </resources>

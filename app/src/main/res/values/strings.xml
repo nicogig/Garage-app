@@ -12,12 +12,12 @@
     <string name="title_activity_splash">Garage</string>
     <string name="himain">Hi, </string>
     <string name="greetingmain">Here\'s what I can do for you.</string>
-    <string name="garagedoor">Open Garage Door</string>
+    <string name="garagedoor">Open </string>
     <string name="notavailable">Feature not available yet.</string>
     <string name="startbtn">START</string>
     <string name="nextbtn">NEXT</string>
     <string name="finishbtn">FINISH</string>
-    <string name="introtext">Control your house. From everywhere.</string>
+    <string name="introtext">Control your house. From anywhere in the world.</string>
     <string name="namehint">Name</string>
     <string name="surnamehint">Surname</string>
     <string name="introname">What\&apos;s your name?</string>
@@ -30,8 +30,8 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify Garage Settings</string>
     <string name="about">About Garage</string>
-    <string name="version">v3.1 Material</string>
-    <string name="buildversion">Build 02012016</string>
+    <string name="version">v4.1.1 Material</string>
+    <string name="buildversion">Build 05012016</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About Garage</string>
@@ -43,6 +43,11 @@
     <string name="proceed">Proceed</string>
     <string name="cancel">Cancel</string>
     <string name="ok">OK</string>
-    <string name="snackbar_egg">Material wohoo!</string>
+    <string name="snackbar_egg">Why is 7 afraid of 8? Because 7 8 9!</string>
+    <string name="title_activity_name_garage">NameGarage</string>
+    <string name="introgaragename">Give your Garage a name.</string>
+    <string name="garagenamehint">ex. Joe\'s Garage.</string>
+    <string name="garagenamemodify">Modify Garage Name</string>
+    <string name="title_activity_garage_name_settings">Garage Name</string>
 
 </resources>

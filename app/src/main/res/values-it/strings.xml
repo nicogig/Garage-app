@@ -12,7 +12,7 @@
     <string name="title_activity_splash">Garage</string>
     <string name="himain">Ciao,</string>
     <string name="greetingmain">Ecco cosa posso fare per te.</string>
-    <string name="garagedoor">Apri Garage</string>
+    <string name="garagedoor">Apri </string>
     <string name="notavailable">Feature non ancora disponibile.</string>
     <string name="startbtn">INIZIA</string>
     <string name="nextbtn">AVANTI</string>
@@ -26,12 +26,12 @@
     <string name="passhint">Password</string>
     <string name="introdone">Tutto apposto!</string>
     <string name="title_activity_settings">Impostazioni</string>
-    <string name="reset">Reinposta App</string>
+    <string name="reset">Reimposta App</string>
     <string name="usermodify">Modifica Impostazioni Utente</string>
     <string name="servermodify">Modifica impostazioni di Garage</string>
     <string name="about">Informazioni su Garage</string>
-    <string name="version">v3.1 Material</string>
-    <string name="buildversion">Build 02012016</string>
+    <string name="version">v4.1.1 Material</string>
+    <string name="buildversion">Build 05012016</string>
     <string name="title_activity_user__settings">Impostazioni Utente</string>
     <string name="title_activity_garage__settings">Impostazioni di Garage</string>
     <string name="title_activity_about__app">Informazioni su Garage</string>
@@ -43,6 +43,10 @@
     <string name="proceed">Procedi</string>
     <string name="cancel">Annulla</string>
     <string name="ok">OK</string>
-    <string name="snackbar_egg">Material wohoo!</string>
+    <string name="snackbar_egg">Batterie non incluse.</string>
+    <string name="introgaragename">Dai un nome al tuo Garage.</string>
+    <string name="garagenamehint">es. Garage di Mario.</string>
+    <string name="garagenamemodify">Modifica il nome di Garage</string>
+    <string name="title_activity_garage_name_settings">Nome di Garage</string>
 
 </resources>

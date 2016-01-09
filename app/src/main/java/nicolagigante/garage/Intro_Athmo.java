@@ -1,35 +1,23 @@
 package nicolagigante.garage;
 
-import android.content.Intent;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Splash extends AppCompatActivity {
-
-    private static int SPLASH_TIME_OUT = 1500;
-    //restored 1500ms delay
+public class Intro_Athmo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent i = new Intent(Splash.this, Redirect.class);
-                startActivity(i);
-                finish();
-            }
-        }, SPLASH_TIME_OUT);
+        setContentView(R.layout.activity_intro__athmo);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_splash, menu);
+        getMenuInflater().inflate(R.menu.menu_intro__athmo, menu);
         return true;
     }
 

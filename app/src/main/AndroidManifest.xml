@@ -104,18 +104,30 @@
         <activity
             android:name=".NameGarage"
             android:label="@string/title_activity_name_garage"
-            android:theme="@style/NameGarage"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/NameGarage" >
         </activity>
         <activity
             android:name=".GarageNameSettings"
             android:label="@string/title_activity_garage_name_settings"
-            android:theme="@style/GarageNameSettings"
             android:parentActivityName=".Settings"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/GarageNameSettings" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nicolagigante.garage.Settings" />
+        </activity>
+        <activity
+            android:name=".Intro_Athmo"
+            android:label="@string/title_activity_intro__athmo"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/IntroAthmo" >
+        </activity>
+        <activity
+            android:name=".Athmo_Wizard_Homescreen"
+            android:label="@string/title_activity_athmo__wizard__homescreen"
+            android:theme="@style/IntroAthmo">
         </activity>
     </application>
 

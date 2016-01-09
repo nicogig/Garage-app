@@ -30,14 +30,11 @@
     <string name="usermodify">Modifica Impostazioni Utente</string>
     <string name="servermodify">Modifica impostazioni di Garage</string>
     <string name="about">Informazioni su Garage</string>
-    <string name="version">v4.1.1 Material</string>
-    <string name="buildversion">Build 05012016</string>
     <string name="title_activity_user__settings">Impostazioni Utente</string>
     <string name="title_activity_garage__settings">Impostazioni di Garage</string>
     <string name="title_activity_about__app">Informazioni su Garage</string>
     <string name="appwidget_text">ESEMPIO</string>
     <string name="add_widget">Aggiungi Widget</string>
-    <string name="snackbar_shrug">  ¯ \ _ (ツ) _ / ¯  </string>
     <string name="dialog_reset_title">Ripristinare Garage?</string>
     <string name="dialog_reset_message">Se procedi, perderai qualsiasi personalizzazione che hai applicato e l\'app si ripristinerà.</string>
     <string name="proceed">Procedi</string>
@@ -48,5 +45,11 @@
     <string name="garagenamehint">es. Garage di Mario.</string>
     <string name="garagenamemodify">Modifica il nome di Garage</string>
     <string name="title_activity_garage_name_settings">Nome di Garage</string>
+    <string name="yesplease">OK, Continua</string>
+    <string name="nothanks">Non ancora</string>
+    <string name="gotathmo">Hai Athmo?</string>
+    <string name="title_activity_intro__athmo">Intro_Athmo</string>
+    <string name="title_activity_name_garage">NameGarage</string>
+    <string name="athmodesc">Controlla immediatamente umidità, temperature, pressione barometrica e altro della tua casa. In pochi secondi e ovunque nel mondo.</string>
 
 </resources>

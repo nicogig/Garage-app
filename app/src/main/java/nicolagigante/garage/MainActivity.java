@@ -29,6 +29,8 @@ import java.util.List;
 
 public class MainActivity extends Activity {
 
+    public static final String FIRST_RUN_ATHMOS = "FirstRunAthmos";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,6 +93,16 @@ public class MainActivity extends Activity {
 
     public void doOpen(View view){
         new MyAsyncTask().execute("hey");
+    }
+
+    public void doOpenAthmos(View view){
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (prefs.getBoolean(FIRST_RUN_ATHMOS, true)) {
+            Intent i = new Intent(this, Athmo_Wizard_Homescreen.class);
+            startActivity(i);
+        } else {
+            Log.d("WTF", "No effin way this was triggered.");
+        }
     }
 
     private class MyAsyncTask extends AsyncTask<String, Integer, Double> {

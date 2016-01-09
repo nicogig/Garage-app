@@ -76,6 +76,21 @@
         <item name="android:colorControlHighlight">@color/accent_name</item>
     </style>
 
+    <style name="IntroAthmo" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">#26c6da</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">#00acc1</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">#00acc1</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:colorControlNormal">#ffffff</item>
+        <item name="android:colorControlActivated">#ffffff</item>
+        <item name="android:colorControlHighlight">#00acc1</item>
+    </style>
+
     <!-- Settings Styles -->
 
     <style name="UserSettings" parent="Theme.AppCompat.Light.NoActionBar">
@@ -110,6 +125,17 @@
         <item name="android:colorPrimaryDark">@color/accent_name</item>
         <!--   theme UI controls like checkboxes and text fields -->
         <item name="android:colorAccent">@color/accent_name</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+    <style name="AthmosSettings" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">#26c6da</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">#00acc1</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">#00acc1</item>
         <item name="android:textColorPrimary">@color/white</item>
     </style>
 

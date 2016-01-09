@@ -30,14 +30,14 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify Garage Settings</string>
     <string name="about">About Garage</string>
-    <string name="version">v4.1.1 Material</string>
-    <string name="buildversion">Build 05012016</string>
+    <string name="version" translatable="false">v4.1.1 Material</string>
+    <string name="buildversion" translatable="false">Build 09012016</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About Garage</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
-    <string name="snackbar_shrug">  ¯ \ _ (ツ) _ / ¯  </string>
+    <string name="snackbar_shrug" translatable="false">  ¯ \ _ (ツ) _ / ¯  </string>
     <string name="dialog_reset_title">Reset Garage?</string>
     <string name="dialog_reset_message">If you proceed, you\'ll loose every personalization you\'ve made, and the app will reset.</string>
     <string name="proceed">Proceed</string>
@@ -49,5 +49,11 @@
     <string name="garagenamehint">ex. Joe\'s Garage.</string>
     <string name="garagenamemodify">Modify Garage Name</string>
     <string name="title_activity_garage_name_settings">Garage Name</string>
+    <string name="title_activity_intro__athmo">Intro_Athmo</string>
+    <string name="yesplease">I\'m in</string>
+    <string name="nothanks">Not Yet</string>
+    <string name="gotathmo">Got Athmo?</string>
+    <string name="athmodesc">Instantly check humidity, themperature, barometric pressure and dew point of your home. Effortlessly. Anywhere in the world.</string>
+    <string name="title_activity_athmo__wizard__homescreen">Athmo_Wizard_Homescreen</string>
 
 </resources>

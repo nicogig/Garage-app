@@ -14,7 +14,7 @@
         android:layout_alignParentEnd="true"
         android:minHeight="?attr/actionBarSize"
         android:background="@color/cyan7"
-        android:elevation="6dp" />
+        android:elevation="0dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"

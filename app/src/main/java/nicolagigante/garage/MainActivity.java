@@ -101,7 +101,8 @@ public class MainActivity extends Activity {
             Intent i = new Intent(this, Athmo_Wizard_Homescreen.class);
             startActivity(i);
         } else {
-            Log.d("WTF", "No effin way this was triggered.");
+            Intent i = new Intent(this, Athmo.class);
+            startActivity(i);
         }
     }
 

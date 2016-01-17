@@ -1,7 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="nicolagigante.garage.GarageNameSettings">
+    tools:context="nicolagigante.garage.Athmo_Settings">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="wrap_content"
@@ -13,7 +15,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:minHeight="?attr/actionBarSize"
-        android:background="@color/teal_name"
+        android:background="#26c6da"
         android:elevation="0dp" />
 
     <RelativeLayout
@@ -57,18 +59,19 @@
                 <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editgaragename"
-                    android:hint="@string/garagenamehint"
+                    android:id="@+id/editipathmo"
+                    android:hint="@string/iphint"
                     android:textColorHint="@color/greyblue"
                     android:textColor="@color/greyblue"
                     android:inputType="textCapWords"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
 
-                 </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
     </RelativeLayout>
 
 </RelativeLayout>
+

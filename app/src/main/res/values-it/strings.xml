@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Garage</string>
+    <string name="app_name">HomeCloud</string>
     <string name="hello_world">Ciao mondo!</string>
     <string name="action_settings">Impostazioni</string>
     <string name="snackbar_text">Azione Inviata</string>
@@ -29,10 +29,10 @@
     <string name="reset">Reimposta App</string>
     <string name="usermodify">Modifica Impostazioni Utente</string>
     <string name="servermodify">Modifica impostazioni di Garage</string>
-    <string name="about">Informazioni su Garage</string>
+    <string name="about">Informazioni su HomeCloud</string>
     <string name="title_activity_user__settings">Impostazioni Utente</string>
     <string name="title_activity_garage__settings">Impostazioni di Garage</string>
-    <string name="title_activity_about__app">Informazioni su Garage</string>
+    <string name="title_activity_about__app">Informazioni su HomeCloud</string>
     <string name="appwidget_text">ESEMPIO</string>
     <string name="add_widget">Aggiungi Widget</string>
     <string name="dialog_reset_title">Ripristinare Garage?</string>
@@ -51,5 +51,8 @@
     <string name="title_activity_intro__athmo">Intro_Athmo</string>
     <string name="title_activity_name_garage">NameGarage</string>
     <string name="athmodesc">Controlla immediatamente umidità, temperature, pressione barometrica e altro della tua casa. In pochi secondi e ovunque nel mondo.</string>
+    <string name="introathmoauth">Autenticati ad Athmo.</string>
+    <string name="athmomodify">Modifica Impostazioni di Athmo</string>
+    <string name="title_athmo_settings">Impostazioni di Athmo</string>
 
 </resources>

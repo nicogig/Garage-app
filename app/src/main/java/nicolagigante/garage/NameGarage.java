@@ -28,7 +28,7 @@ public class NameGarage extends AppCompatActivity {
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("GarageName", garagename);
         editor.apply();
-        Intent i = new Intent(this, Intro_Done.class);
+        Intent i = new Intent(this, Intro_Athmo.class);
         startActivity(i);
     }
 

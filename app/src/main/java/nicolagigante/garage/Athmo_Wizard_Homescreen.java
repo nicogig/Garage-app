@@ -1,9 +1,11 @@
 package nicolagigante.garage;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Athmo_Wizard_Homescreen extends AppCompatActivity {
 
@@ -11,6 +13,16 @@ public class Athmo_Wizard_Homescreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_athmo__wizard__homescreen);
+    }
+
+    public void goToWizard(View view){
+        Intent i = new Intent(this, Athmo_Wizard_Setup.class);
+        startActivity(i);
+    }
+
+    public void skipWizard(View view){
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
     }
 
     @Override

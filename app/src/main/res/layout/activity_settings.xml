@@ -16,7 +16,7 @@
         android:layout_alignParentEnd="true"
         android:minHeight="?attr/actionBarSize"
         android:background="@color/primary"
-        android:elevation="6dp" />
+        android:elevation="0dp" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -56,6 +56,16 @@
             android:paddingLeft="16dp"
             style="?android:attr/borderlessButtonStyle"
             android:onClick="goToNameSettings" />
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/view9"
+            android:text="@string/athmomodify"
+            android:textColor="#546e7a"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="goToAthmoSettings" />
         <android.support.v7.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="60dp"

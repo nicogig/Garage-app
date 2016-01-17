@@ -45,6 +45,10 @@ public class Reset_Dialog extends DialogFragment {
                         editor.apply();
                         editor.putString("Pass", "");
                         editor.apply();
+                        editor.putBoolean("FirstRunAthmos", true);
+                        editor.apply();
+                        editor.putString("IPAthmo", "");
+                        editor.apply();
                         Intent i = new Intent(mContext, Intro.class);
                         startActivity(i);
                     }

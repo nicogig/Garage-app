@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nicolagigante.garage" >
+    package="nicolagigante.garage">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -10,11 +10,11 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -24,33 +24,29 @@
             android:label="@string/title_activity_intro"
             android:noHistory="true"
             android:screenOrientation="portrait"
-            android:theme="@style/Intro1" >
-        </activity>
+            android:theme="@style/Intro1" />
         <activity
             android:name=".Intro_Name"
             android:label="@string/title_activity_intro__name"
             android:noHistory="true"
             android:screenOrientation="portrait"
-            android:theme="@style/Intro2" >
-        </activity>
+            android:theme="@style/Intro2" />
         <activity
             android:name=".Intro_Auth"
             android:label="@string/title_activity_intro__auth"
             android:noHistory="true"
             android:screenOrientation="portrait"
-            android:theme="@style/Intro3" >
-        </activity>
+            android:theme="@style/Intro3" />
         <activity
             android:name=".Intro_Done"
             android:label="@string/title_activity_intro__done"
             android:noHistory="true"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Splash"
             android:label="@string/title_activity_splash"
             android:noHistory="true"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
 
@@ -61,13 +57,12 @@
             android:name=".Redirect"
             android:label="@string/title_activity_splash"
             android:noHistory="true"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Settings"
             android:label="@string/title_activity_settings"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nicolagigante.garage.MainActivity" />
@@ -77,7 +72,7 @@
             android:label="@string/title_activity_user__settings"
             android:parentActivityName=".Settings"
             android:screenOrientation="portrait"
-            android:theme="@style/UserSettings" >
+            android:theme="@style/UserSettings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nicolagigante.garage.Settings" />
@@ -87,7 +82,7 @@
             android:label="@string/title_activity_garage__settings"
             android:parentActivityName=".Settings"
             android:screenOrientation="portrait"
-            android:theme="@style/GarageSettings" >
+            android:theme="@style/GarageSettings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nicolagigante.garage.Settings" />
@@ -96,7 +91,7 @@
             android:name=".About_App"
             android:label="@string/title_activity_about__app"
             android:parentActivityName=".Settings"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nicolagigante.garage.Settings" />
@@ -104,15 +99,15 @@
         <activity
             android:name=".NameGarage"
             android:label="@string/title_activity_name_garage"
+            android:noHistory="true"
             android:screenOrientation="portrait"
-            android:theme="@style/NameGarage" >
-        </activity>
+            android:theme="@style/NameGarage" />
         <activity
             android:name=".GarageNameSettings"
             android:label="@string/title_activity_garage_name_settings"
             android:parentActivityName=".Settings"
             android:screenOrientation="portrait"
-            android:theme="@style/GarageNameSettings" >
+            android:theme="@style/GarageNameSettings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nicolagigante.garage.Settings" />
@@ -122,13 +117,32 @@
             android:label="@string/title_activity_intro__athmo"
             android:noHistory="true"
             android:screenOrientation="portrait"
-            android:theme="@style/IntroAthmo" >
-        </activity>
+            android:theme="@style/IntroAthmo" />
         <activity
             android:name=".Athmo_Wizard_Homescreen"
             android:label="@string/title_activity_athmo__wizard__homescreen"
-            android:theme="@style/IntroAthmo">
-        </activity>
+            android:theme="@style/IntroAthmo" />
+        <activity
+            android:name=".Intro_Athmo_Auth"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/IntroAthmo" />
+        <activity
+            android:name=".Athmo_Settings"
+            android:label="@string/title_athmo_settings"
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AthmosSettings" />
+        <activity
+            android:name=".Athmo"
+            android:label="@string/athmo"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AthmosSettings" />
+        <activity android:name=".Athmo_Wizard_Setup"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/IntroAthmo"></activity>
     </application>
 
 </manifest>

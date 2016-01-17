@@ -1,9 +1,11 @@
 package nicolagigante.garage;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Intro_Athmo extends AppCompatActivity {
 
@@ -12,6 +14,16 @@ public class Intro_Athmo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro__athmo);
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+    }
+
+    public void goToWizard(View view){
+        Intent i = new Intent(this, Intro_Athmo_Auth.class);
+        startActivity(i);
+    }
+
+    public void skipWizard(View view){
+        Intent i = new Intent(this, Intro_Done.class);
+        startActivity(i);
     }
 
     @Override

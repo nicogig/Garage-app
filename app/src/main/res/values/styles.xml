@@ -116,4 +116,31 @@
         <item name="android:textColorPrimary">@color/white</item>
     </style>
 
+    <style name="IntroAthmo" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">#26c6da</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">#00acc1</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">#00acc1</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorControlActivated">#ffffff</item>
+        <item name="colorControlHighlight">#00acc1</item>
+    </style>
+
+    <style name="AthmosSettings" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">#26c6da</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">#00acc1</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">#00acc1</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
 </resources>

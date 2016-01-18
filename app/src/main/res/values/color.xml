@@ -13,4 +13,5 @@
     <color name="greyblue">#546e7a</color>
     <color name="teal_name">#26a69a</color>
     <color name="accent_name">#00897b</color>
+    <color name="transparent">#00000000</color>
 </resources>

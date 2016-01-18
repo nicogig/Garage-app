@@ -13,4 +13,11 @@ http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
     <dimen name="tab_padding_bottom">16dp</dimen>
     <dimen name="tab_label">14sp</dimen>
     <dimen name="custom_tab_layout_height">72dp</dimen>
+    <dimen name="pie_segment_label_font_size">10sp</dimen>
+    <dimen name="title_font_size">20sp</dimen>
+    <dimen name="domain_label_font_size">13sp</dimen>
+    <dimen name="range_label_font_size">13sp</dimen>
+    <dimen name="range_tick_label_font_size">15sp</dimen>
+    <dimen name="domain_tick_label_font_size">15sp</dimen>
+    <dimen name="legend_text_font_size">20sp</dimen>
 </resources>

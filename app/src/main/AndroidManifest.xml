@@ -9,7 +9,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="HomeCloud"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -44,7 +44,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Splash"
-            android:label="@string/title_activity_splash"
+            android:label="HomeCloud"
             android:noHistory="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -55,7 +55,7 @@
         </activity>
         <activity
             android:name=".Redirect"
-            android:label="@string/title_activity_splash"
+            android:label="HomeCloud"
             android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity

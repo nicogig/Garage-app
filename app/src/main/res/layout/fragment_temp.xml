@@ -9,34 +9,44 @@
     android:orientation="vertical" >
 
     <com.androidplot.xy.XYPlot
-        android:id="@+id/plot"
-        android:layout_width="fill_parent"
+        android:id="@+id/mySimpleXYPlot"
+        android:layout_width="wrap_content"
         android:layout_height="250dp"
-        ap:label="A Simple XY Plot"
+        ap:labelTextSize="@dimen/title_font_size"
+        ap:rangeLabelTextSize="@dimen/range_label_font_size"
         ap:borderColor="#26c6da"
         ap:backgroundColor="#26c6da"
         ap:graphBackgroundColor="#26c6da"
         ap:gridBackgroundColor="#26c6da"
-        ap:gridPaddingBottom="10dp"
-        ap:labelTextSize="20sp"
-        ap:rangeLabelTextSize="13sp"
-        ap:domainLabelTextSize="13sp"
-        ap:graphMarginTop="20dp"
-        ap:graphMarginBottom="40dp"
-        ap:graphMarginLeft="15dp"
+        ap:rangeTickLabelTextColor="#26c6da"
+        ap:domainTickLabelTextColor="#FFFFFF"
+        ap:domainLabelTextSize="@dimen/domain_label_font_size"
+        ap:graphMarginTop="0dp"
+        ap:graphMarginBottom="25dp"
+        ap:graphMarginLeft="-10dp"
         ap:graphMarginRight="10dp"
+        ap:rangeTickLabelTextSize="@dimen/range_tick_label_font_size"
+        ap:rangeOriginTickLabelTextSize="@dimen/range_tick_label_font_size"
+        ap:domainTickLabelTextSize="@dimen/domain_tick_label_font_size"
+        ap:domainOriginTickLabelTextSize="@dimen/domain_tick_label_font_size"
+        ap:legendTextSize="0dp"
+        ap:legendIconHeight="0dp"
+        ap:legendIconWidth="0dp"
+        ap:legendHeight="0"
+        ap:legendAnchorPosition="right_bottom"
         ap:graphDomainLineColor="#FFFFFF"
-        ap:graphDomainLineThickness="1dp"
-        ap:graphRangeLineColor="#FFFFFF"
-        ap:graphRangeLineThickness="1dp"
-        ap:rangeTickLabelTextSize="15sp"
-        ap:rangeOriginTickLabelTextSize="15sp"
-        ap:domainTickLabelTextSize="15sp"
-        ap:domainOriginTickLabelTextSize="15sp"
-        ap:legendTextSize="5sp"
-        ap:legendIconHeight="5dp"
-        ap:legendIconWidth="5dp"
-        ap:legendHeight="15dp"
-        ap:legendAnchorPosition="right_bottom"/>
+        ap:graphRangeLineColor="#FFFFFF" />
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#26c6da"
+        android:id="@+id/webView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView11" />
 
 </LinearLayout>

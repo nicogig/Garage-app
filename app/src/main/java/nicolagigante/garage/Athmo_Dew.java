@@ -1,10 +1,14 @@
 package nicolagigante.garage;
 
+import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 /**
  * Created by Nicola on 17/1/2016.
@@ -18,6 +22,11 @@ public class Athmo_Dew extends Fragment {
         View view = inflater.inflate(R.layout.fragment_temp, container, false);
         // Setup handles to view objects here
         // etFoo = (EditText) view.findViewById(R.id.etFoo);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        String ipathmo = prefs.getString("IPAthmo", "");
+        WebView webView = (WebView)view.findViewById(R.id.webView);
+        webView.loadUrl("http://" + ipathmo + "/dew");
+        webView.setBackgroundColor(Color.parseColor("#26c6da"));
         return view;
     }
 

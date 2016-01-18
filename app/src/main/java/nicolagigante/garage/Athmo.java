@@ -52,6 +52,7 @@ public class Athmo extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
+
     }
 
     private void setupTabIcons() {

@@ -30,7 +30,7 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify Garage Settings</string>
     <string name="about">About HomeCloud</string>
-    <string name="version" translatable="false">v4.4.1 Material</string>
+    <string name="version" translatable="false">v4.9 Material</string>
     <string name="buildversion" translatable="false">Build 18012016</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
@@ -62,5 +62,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_quick_open">QuickOpen</string>
 
 </resources>

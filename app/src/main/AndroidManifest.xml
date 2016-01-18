@@ -49,7 +49,6 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
-
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
@@ -139,10 +138,22 @@
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AthmosSettings" />
-        <activity android:name=".Athmo_Wizard_Setup"
+        <activity
+            android:name=".Athmo_Wizard_Setup"
             android:noHistory="true"
             android:screenOrientation="portrait"
-            android:theme="@style/IntroAthmo"></activity>
+            android:theme="@style/IntroAthmo" />
+        <activity
+            android:name=".QuickOpen"
+            android:label="Garage"
+            android:theme="@style/Theme.Transparent"
+            android:icon="@mipmap/ic_launcher_qo"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

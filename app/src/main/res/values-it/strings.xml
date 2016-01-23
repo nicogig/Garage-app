@@ -50,9 +50,15 @@
     <string name="gotathmo">Hai Athmo?</string>
     <string name="title_activity_intro__athmo">Intro_Athmo</string>
     <string name="title_activity_name_garage">NameGarage</string>
-    <string name="athmodesc">Controlla immediatamente umidità, temperature, pressione barometrica e altro della tua casa. In pochi secondi e ovunque nel mondo.</string>
+    <string name="athmodesc">Controlla immediatamente umidità, temperature, pressione barometrica e molto altro. In pochi secondi e ovunque nel mondo.</string>
     <string name="introathmoauth">Autenticati ad Athmo.</string>
     <string name="athmomodify">Modifica Impostazioni di Athmo</string>
     <string name="title_athmo_settings">Impostazioni di Athmo</string>
+    <string name="title_activity_quick_open">Apertura Veloce</string>
+    <string name="dewlink">dewit</string>
+    <string name="humlink">humidityit</string>
+    <string name="pressurelink">pressureit</string>
+    <string name="templink">temperatureit</string>
+    <string name="iconcredit">Icone dei fantastici ragazzi di icons8.com ❤️</string>
 
 </resources>

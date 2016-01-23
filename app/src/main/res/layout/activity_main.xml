@@ -91,7 +91,6 @@
             android:scaleType="fitCenter"
             android:tint="@color/primary"
             android:onClick="doOpen"
-            android:elevation="0dp"
             app:backgroundTint="#ffffff"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />

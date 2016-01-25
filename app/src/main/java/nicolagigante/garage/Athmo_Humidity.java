@@ -5,12 +5,14 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.BarChart;
@@ -41,8 +43,14 @@ public class Athmo_Humidity extends Fragment {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         String ipathmo = prefs.getString("IPAthmo", "");
         new ParseURL().execute(new String[]{"http://"+ ipathmo +"/hum.txt"});
-        WebView webView = (WebView)view.findViewById(R.id.webView);
+        final WebView webView = (WebView)view.findViewById(R.id.webView);
         webView.loadUrl("http://" + ipathmo + "/" + getString(R.string.humlink));
+        webView.setWebViewClient(new WebViewClient() {
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                webView.loadUrl("about:blank");
+
+            }
+        });
         webView.setBackgroundColor(Color.parseColor("#26c6da"));
         return view;
     }
@@ -72,7 +80,7 @@ public class Athmo_Humidity extends Fragment {
         rightAxis.setTextColor(Color.parseColor("#00000000"));
         rightAxis.setGridColor(Color.parseColor("#26c6da"));
         rightAxis.setAxisLineColor(Color.parseColor("#26c6da"));
-        xAxis.setTextColor(Color.parseColor("#00000000"));
+        xAxis.setTextColor(Color.parseColor("#FFFFFF"));
         xAxis.setAxisLineColor(Color.parseColor("#26c6da"));
         xAxis.setGridColor(Color.parseColor("#26c6da"));
         chart.setData(data);
@@ -113,8 +121,13 @@ public class Athmo_Humidity extends Fragment {
         protected void onPostExecute(String result)
         {
             super.onPostExecute(result);
-            parseData(result, getView());
-        }
+            if (result != null) {
+                parseData(result, getView());
+            } else {            Snackbar
+                    .make(getView().findViewById(R.id.fragment_hum), R.string.snackbar_text_nodata, Snackbar.LENGTH_LONG)
+                    .show();
+
+            }         }
 
     }
 

@@ -4,7 +4,7 @@
     <string name="app_name">HomeCloud</string>
     <string name="hello_world">Ciao mondo!</string>
     <string name="action_settings">Impostazioni</string>
-    <string name="snackbar_text">Azione Inviata</string>
+    <string name="snackbar_text">Azione Inviata.</string>
     <string name="title_activity_intro">Introduzione</string>
     <string name="title_activity_intro__name">Intro_Name</string>
     <string name="title_activity_intro__auth">Intro_Auth</string>
@@ -60,5 +60,7 @@
     <string name="pressurelink">pressureit</string>
     <string name="templink">temperatureit</string>
     <string name="iconcredit">Icone dei fantastici ragazzi di icons8.com ❤️</string>
+    <string name="snackbar_text_nodata">Non ho ricevuto niente. Sei connesso ad internet?</string>
+    <string name="snackbar_text_cantsend">Impossibile inviare l\'azione a Garage.</string>
 
 </resources>

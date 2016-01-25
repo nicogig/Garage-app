@@ -30,6 +30,7 @@ import java.util.List;
 public class MainActivity extends Activity {
 
     public static final String FIRST_RUN_ATHMOS = "FirstRunAthmos";
+    public String status;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,9 +122,17 @@ public class MainActivity extends Activity {
         }
 
         protected void onPostExecute(Double result) {
-            Snackbar
-                    .make(findViewById(R.id.activity_main), R.string.snackbar_text, Snackbar.LENGTH_SHORT)
-                    .show();
+            if (status == "done") {
+                Snackbar
+                        .make(findViewById(R.id.activity_main), R.string.snackbar_text, Snackbar.LENGTH_SHORT)
+                        .show();
+                status = "";
+            } else {
+                Snackbar
+                        .make(findViewById(R.id.activity_main), R.string.snackbar_text_cantsend, Snackbar.LENGTH_LONG)
+                        .show();
+            }
+
         }
 
         protected void onProgressUpdate(Integer... progress) {
@@ -146,6 +155,7 @@ public class MainActivity extends Activity {
 
                 // Execute HTTP Post Request
                 HttpResponse response = httpclient.execute(httppost);
+                status = "done";
 
             } catch (ClientProtocolException e) {
                 // TODO Auto-generated catch block

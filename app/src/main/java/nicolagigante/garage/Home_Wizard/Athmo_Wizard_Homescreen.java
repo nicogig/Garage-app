@@ -1,35 +1,37 @@
-package nicolagigante.garage;
+package nicolagigante.garage.Home_Wizard;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class Intro extends AppCompatActivity {
+import nicolagigante.garage.MainActivity;
+import nicolagigante.garage.R;
+
+public class Athmo_Wizard_Homescreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro);
+        setContentView(R.layout.activity_athmo__wizard__homescreen);
     }
 
-    public void goToName(View view) throws ClassNotFoundException {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putString("LaunchActivity", "nicolagigante.garage.MainActivity");
-        editor.apply();
-        Intent i = new Intent(this, Intro_Name.class);
+    public void goToWizard(View view){
+        Intent i = new Intent(this, Athmo_Wizard_Setup.class);
+        startActivity(i);
+    }
+
+    public void skipWizard(View view){
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_intro, menu);
+        getMenuInflater().inflate(R.menu.menu_athmo__wizard__homescreen, menu);
         return true;
     }
 

@@ -3,7 +3,6 @@ package nicolagigante.garage;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +11,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import nicolagigante.garage.SettingsActivities.Athmo_Settings;
 
 public class Settings extends AppCompatActivity {
 
@@ -28,12 +29,12 @@ public class Settings extends AppCompatActivity {
     }
 
     public void goToUser(View view){
-        Intent i = new Intent(this, User_Settings.class);
+        Intent i = new Intent(this, nicolagigante.garage.SettingsActivities.User_Settings.class);
         startActivity(i);
     }
 
     public void goToGarage(View view){
-        Intent i = new Intent(this, Garage_Settings.class);
+        Intent i = new Intent(this, nicolagigante.garage.SettingsActivities.Garage_Settings.class);
         startActivity(i);
     }
 
@@ -43,17 +44,17 @@ public class Settings extends AppCompatActivity {
     }
 
     public void goToReset(View view){
-        DialogFragment newFragment = new Reset_Dialog(this);
+        DialogFragment newFragment = new nicolagigante.garage.SettingsActivities.Reset_Dialog(this);
         newFragment.show(getSupportFragmentManager(), "reset");
     }
 
     public void goToAbout(View view){
-        Intent i = new Intent(this, About_App.class);
+        Intent i = new Intent(this, nicolagigante.garage.SettingsActivities.About_App.class);
         startActivity(i);
     }
 
     public void goToNameSettings(View view){
-        Intent i = new Intent(this, GarageNameSettings.class);
+        Intent i = new Intent(this, nicolagigante.garage.SettingsActivities.GarageNameSettings.class);
         startActivity(i);
     }
 

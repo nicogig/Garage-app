@@ -1,4 +1,4 @@
-package nicolagigante.garage;
+package nicolagigante.garage.Fragments;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -34,6 +34,9 @@ import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import java.util.ArrayList;
+
+import nicolagigante.garage.MyMarkerView;
+import nicolagigante.garage.R;
 
 /**
  * Created by Nicola on 17/1/2016.

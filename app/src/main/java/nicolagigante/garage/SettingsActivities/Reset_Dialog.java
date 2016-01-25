@@ -1,4 +1,4 @@
-package nicolagigante.garage;
+package nicolagigante.garage.SettingsActivities;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
+
+import nicolagigante.garage.FirstTime.Intro;
+import nicolagigante.garage.R;
 
 
 public class Reset_Dialog extends DialogFragment {

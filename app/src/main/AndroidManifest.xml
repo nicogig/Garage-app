@@ -20,25 +20,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Intro"
+            android:name=".FirstTime.Intro"
             android:label="@string/title_activity_intro"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/Intro1" />
         <activity
-            android:name=".Intro_Name"
+            android:name=".FirstTime.Intro_Name"
             android:label="@string/title_activity_intro__name"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/Intro2" />
         <activity
-            android:name=".Intro_Auth"
+            android:name=".FirstTime.Intro_Auth"
             android:label="@string/title_activity_intro__auth"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/Intro3" />
         <activity
-            android:name=".Intro_Done"
+            android:name=".FirstTime.Intro_Done"
             android:label="@string/title_activity_intro__done"
             android:noHistory="true"
             android:screenOrientation="portrait" />
@@ -68,7 +68,7 @@
                 android:value="nicolagigante.garage.MainActivity" />
         </activity>
         <activity
-            android:name=".User_Settings"
+            android:name=".SettingsActivities.User_Settings"
             android:label="@string/title_activity_user__settings"
             android:parentActivityName=".Settings"
             android:screenOrientation="portrait"
@@ -78,7 +78,7 @@
                 android:value="nicolagigante.garage.Settings" />
         </activity>
         <activity
-            android:name=".Garage_Settings"
+            android:name=".SettingsActivities.Garage_Settings"
             android:label="@string/title_activity_garage__settings"
             android:parentActivityName=".Settings"
             android:screenOrientation="portrait"
@@ -88,7 +88,7 @@
                 android:value="nicolagigante.garage.Settings" />
         </activity>
         <activity
-            android:name=".About_App"
+            android:name=".SettingsActivities.About_App"
             android:label="@string/title_activity_about__app"
             android:parentActivityName=".Settings"
             android:screenOrientation="portrait">
@@ -97,13 +97,13 @@
                 android:value="nicolagigante.garage.Settings" />
         </activity>
         <activity
-            android:name=".NameGarage"
+            android:name=".FirstTime.NameGarage"
             android:label="@string/title_activity_name_garage"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/NameGarage" />
         <activity
-            android:name=".GarageNameSettings"
+            android:name=".SettingsActivities.GarageNameSettings"
             android:label="@string/title_activity_garage_name_settings"
             android:parentActivityName=".Settings"
             android:screenOrientation="portrait"
@@ -113,22 +113,22 @@
                 android:value="nicolagigante.garage.Settings" />
         </activity>
         <activity
-            android:name=".Intro_Athmo"
+            android:name=".FirstTime.Intro_Athmo"
             android:label="@string/title_activity_intro__athmo"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/IntroAthmo" />
         <activity
-            android:name=".Athmo_Wizard_Homescreen"
+            android:name=".Home_Wizard.Athmo_Wizard_Homescreen"
             android:label="@string/title_activity_athmo__wizard__homescreen"
             android:theme="@style/IntroAthmo" />
         <activity
-            android:name=".Intro_Athmo_Auth"
+            android:name=".FirstTime.Intro_Athmo_Auth"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/IntroAthmo" />
         <activity
-            android:name=".Athmo_Settings"
+            android:name=".SettingsActivities.Athmo_Settings"
             android:label="@string/title_athmo_settings"
             android:parentActivityName=".Settings"
             android:screenOrientation="portrait"
@@ -140,7 +140,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AthmosSettings" />
         <activity
-            android:name=".Athmo_Wizard_Setup"
+            android:name=".Home_Wizard.Athmo_Wizard_Setup"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/IntroAthmo" />

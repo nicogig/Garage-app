@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.view.Menu;
-import android.view.MenuItem;
+
+import nicolagigante.garage.FirstTime.Intro;
 
 /**
  * Created by Nicola on 01/06/2015.

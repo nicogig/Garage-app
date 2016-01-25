@@ -1,4 +1,4 @@
-package nicolagigante.garage;
+package nicolagigante.garage.FirstTime;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,14 +8,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class Athmo_Wizard_Setup extends AppCompatActivity {
+import nicolagigante.garage.R;
+
+public class Intro_Athmo_Auth extends AppCompatActivity {
 
     public static final String FIRST_RUN_ATHMOS = "FirstRunAthmos";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_athmo__wizard__setup);
+        setContentView(R.layout.activity_intro__athmo__auth);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         EditText edtx = (EditText)(findViewById(R.id.ipeditatmo));
         edtx.setHintTextColor(getResources().getColor(R.color.white));
     }
@@ -29,7 +32,7 @@ public class Athmo_Wizard_Setup extends AppCompatActivity {
         editor.apply();
         editor.putBoolean(FIRST_RUN_ATHMOS, false);
         editor.apply();
-        Intent i = new Intent(this, Athmo.class);
+        Intent i = new Intent(this, Intro_Done.class);
         startActivity(i);
     }
 }

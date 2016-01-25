@@ -1,4 +1,4 @@
-package nicolagigante.garage;
+package nicolagigante.garage.FirstTime;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,32 +10,41 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
-public class NameGarage extends AppCompatActivity {
+import nicolagigante.garage.R;
+
+public class Intro_Auth extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_name_garage);
+        setContentView(R.layout.activity_intro__auth);
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-        EditText edtx = (EditText)(findViewById(R.id.garagename));
+        EditText edtx = (EditText)(findViewById(R.id.ipedit));
+        EditText edtxs = (EditText)(findViewById(R.id.passedit));
         edtx.setHintTextColor(getResources().getColor(R.color.white));
+        edtxs.setHintTextColor(getResources().getColor(R.color.white));
     }
 
-    public void finishSetup(View view){
-        EditText edtx = (EditText)(findViewById(R.id.garagename));
-        String garagename = edtx.getText().toString();
+    public void goToDone(View view){
+        EditText edtx = (EditText)(findViewById(R.id.ipedit));
+        EditText edtxs = (EditText)(findViewById(R.id.passedit));
+        String ip = edtx.getText().toString();
+        String pass = edtxs.getText().toString();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = prefs.edit();
-        editor.putString("GarageName", garagename);
+        editor.putString("IP", ip);
         editor.apply();
-        Intent i = new Intent(this, Intro_Athmo.class);
+        editor.putString("Pass", pass);
+        editor.apply();
+        Intent i = new Intent(this, NameGarage.class);
         startActivity(i);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_name_garage, menu);
+        getMenuInflater().inflate(R.menu.menu_intro__auth, menu);
         return true;
     }
 

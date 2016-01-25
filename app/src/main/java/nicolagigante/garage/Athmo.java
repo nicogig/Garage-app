@@ -1,13 +1,11 @@
 package nicolagigante.garage;
 
-import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -18,10 +16,10 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
 
-import nicolagigante.garage.Athmo_Temp;
-import nicolagigante.garage.Athmo_Dew;
-import nicolagigante.garage.Athmo_Humidity;
-import nicolagigante.garage.Athmo_Pressure;
+import nicolagigante.garage.Fragments.Athmo_Temp;
+import nicolagigante.garage.Fragments.Athmo_Dew;
+import nicolagigante.garage.Fragments.Athmo_Humidity;
+import nicolagigante.garage.Fragments.Athmo_Pressure;
 
 public class Athmo extends AppCompatActivity {
 

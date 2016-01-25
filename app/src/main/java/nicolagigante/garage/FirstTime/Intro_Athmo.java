@@ -1,39 +1,37 @@
-package nicolagigante.garage;
+package nicolagigante.garage.FirstTime;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class Intro_Done extends AppCompatActivity {
+import nicolagigante.garage.R;
 
-    public static final String FIRST_RUN = "FirstRun";
+public class Intro_Athmo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro__done);
+        setContentView(R.layout.activity_intro__athmo);
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 
-    public void goToMain(View view) throws ClassNotFoundException {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putBoolean(FIRST_RUN, false);
-        editor.apply();
-        String launchactivity = prefs.getString("LaunchActivity", "");
-        Intent i = new Intent(this, Class.forName(launchactivity));
+    public void goToWizard(View view){
+        Intent i = new Intent(this, Intro_Athmo_Auth.class);
+        startActivity(i);
+    }
+
+    public void skipWizard(View view){
+        Intent i = new Intent(this, Intro_Done.class);
         startActivity(i);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_intro__done, menu);
+        getMenuInflater().inflate(R.menu.menu_intro__athmo, menu);
         return true;
     }
 

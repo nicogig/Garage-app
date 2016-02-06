@@ -60,8 +60,13 @@ public class MainActivity extends Activity {
     @Override
     public void onRestart(){
         super.onRestart();
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
+        /*Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);*/
+    }
+
+    @Override
+    public void onBackPressed(){
+        this.finish();
     }
 
 

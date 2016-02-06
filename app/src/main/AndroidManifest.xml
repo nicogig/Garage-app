@@ -156,7 +156,9 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".SettingsActivities.Reset_Athmo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AthmosSettings"></activity>
     </application>
 
 </manifest>

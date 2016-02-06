@@ -58,6 +58,11 @@ public class Settings extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void goToRefresh(View view){
+        DialogFragment newFragment = new nicolagigante.garage.SettingsActivities.Reset_Athmo_Dialog(this);
+        newFragment.show(getSupportFragmentManager(), "refresh");
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

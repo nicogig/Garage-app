@@ -37,6 +37,7 @@ import java.util.ArrayList;
 
 import nicolagigante.garage.MyMarkerView;
 import nicolagigante.garage.R;
+import nicolagigante.garage.ReloadWebView;
 
 /**
  * Created by Nicola on 17/1/2016.
@@ -47,6 +48,8 @@ public class Athmo_Temp extends Fragment implements OnChartValueSelectedListener
     private String[] txtTempString;
     private Context mContext;
     private BarChart chart;
+    private String tempString;
+    private int a = 0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -62,10 +65,10 @@ public class Athmo_Temp extends Fragment implements OnChartValueSelectedListener
         webView.setWebViewClient(new WebViewClient() {
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
                 webView.loadUrl("about:blank");
-
             }
         });
         webView.setBackgroundColor(Color.parseColor("#26c6da"));
+        //new ReloadWebView(getActivity(), 3, webView);
         return view;
     }
 
@@ -74,11 +77,20 @@ public class Athmo_Temp extends Fragment implements OnChartValueSelectedListener
         txtTempString = string.split(";");
         ArrayList<BarEntry> yVals = new ArrayList<>();
         ArrayList<String> xVals = new ArrayList<>();
-        for (int i = 0; i < txtTempString.length; i++) {
-            yVals.add(new BarEntry(Float.parseFloat(txtTempString[i]), i));
-            xVals.add(String.valueOf(i));
+
+        int k;
+        if (txtTempString.length > 48){
+            k = txtTempString.length - 48;
+        } else {
+            k = 0;
         }
-        View parent = (View) view.getParent();
+        int temp=0;
+        for (int i = k; i < txtTempString.length; i++) {
+            yVals.add(new BarEntry(Float.parseFloat(txtTempString[i]), temp));
+            xVals.add(String.valueOf(temp));
+            temp++;
+        }
+
         BarDataSet set1 = new BarDataSet(yVals, "");
         set1.setColor(Color.parseColor("#FFFFFF"));
         ArrayList<IBarDataSet> dataSets = new ArrayList<>();

@@ -35,7 +35,7 @@
     <string name="title_activity_about__app">Informazioni su HomeCloud</string>
     <string name="appwidget_text">ESEMPIO</string>
     <string name="add_widget">Aggiungi Widget</string>
-    <string name="dialog_reset_title">Ripristinare Garage?</string>
+    <string name="dialog_reset_title">Ripristinare HomeCloud?</string>
     <string name="dialog_reset_message">Se procedi, perderai qualsiasi personalizzazione che hai applicato e l\'app si ripristinerà.</string>
     <string name="proceed">Procedi</string>
     <string name="cancel">Annulla</string>
@@ -62,5 +62,11 @@
     <string name="iconcredit">Icone dei fantastici ragazzi di icons8.com ❤️</string>
     <string name="snackbar_text_nodata">Non ho ricevuto niente. Sei connesso ad internet?</string>
     <string name="snackbar_text_cantsend">Impossibile inviare l\'azione a Garage.</string>
+    <string name="dialog_reset_athmo">Riavviare Athmo?</string>
+    <string name="dialog_reset_athmo_message">A volte Athmo può diventare lento e non funzionare correttamente. Se accade, la soluzione migliore è quella di riavviare Athmo.</string>
+    <string name="sending_command">Sto inviando...</string>
+    <string name="command_sent">Comando Inviato!</string>
+    <string name="cant_send_command">Non posso inviare il comando.</string>
+    <string name="refresh_athmo">Riavvia Athmo</string>
 
 </resources>

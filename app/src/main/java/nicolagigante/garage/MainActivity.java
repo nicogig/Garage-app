@@ -1,16 +1,28 @@
 package nicolagigante.garage;
 
+import android.animation.Animator;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.annotation.ColorRes;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewAnimationUtils;
+import android.view.ViewGroup;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import org.apache.http.HttpResponse;
@@ -29,10 +41,11 @@ import java.util.List;
 import nicolagigante.garage.Home_Wizard.Athmo_Wizard_Homescreen;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     public static final String FIRST_RUN_ATHMOS = "FirstRunAthmos";
     public String status;
+    private RelativeLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,13 +105,22 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    private Animator animateRevealColorFromCoordinates(ViewGroup viewRoot, @ColorRes int color, int x, int y) {
+        float finalRadius = (float) Math.hypot(viewRoot.getWidth(), viewRoot.getHeight());
+        Animator anim = ViewAnimationUtils.createCircularReveal(viewRoot, x, y, 0, finalRadius);
+        viewRoot.setBackgroundColor(getResources().getColor(color));
+        ImageView imgView = (ImageView)findViewById(R.id.imageView5);
+        imgView.setVisibility(View.VISIBLE);
+        anim.setDuration(500);
+        anim.setInterpolator(new AccelerateDecelerateInterpolator());
+        anim.start();
+        return anim;
+    }
 
     public void goToSettings (View view){
         Intent i = new Intent(this, Settings.class);
         startActivity(i);
     }
-
-
 
     public void doOpen(View view){
         new MyAsyncTask().execute("hey");
@@ -106,12 +128,21 @@ public class MainActivity extends Activity {
 
     public void doOpenAthmos(View view){
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        FloatingActionButton fab_athmo = (FloatingActionButton)findViewById(R.id.fab2);
         if (prefs.getBoolean(FIRST_RUN_ATHMOS, true)) {
             Intent i = new Intent(this, Athmo_Wizard_Homescreen.class);
             startActivity(i);
         } else {
-            Intent i = new Intent(this, Athmo.class);
-            startActivity(i);
+            if (android.os.Build.VERSION.SDK_INT >= 21) {
+                RelativeLayout activityMain = (RelativeLayout)findViewById(R.id.activity_main);
+                LinearLayout fab2Layout = (LinearLayout)findViewById(R.id.linearLayout10);
+                animateRevealColorFromCoordinates(activityMain, R.color.athmo_cyan , (int) fab2Layout.getX(), (int) fab2Layout.getY());
+                Intent i = new Intent(this, Athmo.class);
+                startActivity(i);
+            } else {
+                Intent i = new Intent(this, Athmo.class);
+                startActivity(i);
+            }
         }
     }
 

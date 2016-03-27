@@ -210,9 +210,13 @@ public class Athmo_Dew extends Fragment implements OnChartGestureListener, OnCha
             super.onPostExecute(result);
             if (result != null) {
                 parseData(result, getView());
-            } else {            Snackbar
-                    .make(getView().findViewById(R.id.fragment_dew), R.string.snackbar_text_nodata, Snackbar.LENGTH_LONG)
-                    .show();
+            } else {                            try {
+                Snackbar
+                        .make(getView().findViewById(R.id.fragment_temp), R.string.snackbar_text_nodata, Snackbar.LENGTH_LONG)
+                        .show();
+            } catch(java.lang.NullPointerException e){
+                Log.e("Athmo", "NullPointer");
+            }
 
             }
         }

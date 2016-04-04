@@ -15,4 +15,19 @@
     <color name="teal_name">#26a69a</color>
     <color name="accent_name">#00897b</color>
     <color name="transparent">#00000000</color>
+
+    <color name="ColorPrimary">#0b9677</color>
+    <color name="ColorPrimaryDark">#007D5E</color>
+    <color name="ColorAccent">#007D5E</color>
+
+    <color name="Background">#0b9677</color>
+
+    <color name="Background.CardView">#DDDDDD</color>
+
+    <color name="TextColor.White">#FFFFFF</color>
+    <color name="TextColor.Gray">#999999</color>
+    <color name="TextColor.DarkGray">#333333</color>
+    <color name="TextColor.Black">#000000</color>
+
+    <color name="Divider">#333333</color>
 </resources>

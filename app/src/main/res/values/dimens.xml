@@ -21,4 +21,24 @@ http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
     <dimen name="domain_tick_label_font_size">15sp</dimen>
     <dimen name="legend_text_font_size">20sp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Widths -->
+    <dimen name="Width.Label">90dp</dimen>
+    <dimen name="Width.Dialog">280dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="Margin.Half">8dp</dimen>
+    <dimen name="Margin.Standard">16dp</dimen>
+    <dimen name="Margin.Double">32dp</dimen>
+    <dimen name="Margin.FABPadding">96dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="Text.Small">12sp</dimen>
+    <dimen name="Text.Standard">14sp</dimen>
+    <dimen name="Text.Large">16sp</dimen>
+    <dimen name="Text.VeryLarge">18sp</dimen>
+    <dimen name="Text.EmptyState">20sp</dimen>
+
+    <!-- Dividers -->
+    <dimen name="Divider.Width">1dp</dimen>
 </resources>

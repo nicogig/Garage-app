@@ -44,6 +44,7 @@ import nicolagigante.garage.Home_Wizard.Athmo_Wizard_Homescreen;
 public class MainActivity extends AppCompatActivity {
 
     public static final String FIRST_RUN_ATHMOS = "FirstRunAthmos";
+    public static final String UPDATE_CONTEXT = "UpdateContext";
     public String status;
     private RelativeLayout linearLayout;
 
@@ -53,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
         Log.v("Hello", "In the onCreate ");
         setContentView(R.layout.activity_main);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (prefs.getBoolean(UPDATE_CONTEXT, true)) {
+            Intent i = new Intent(this, NotificationsIntro.class);
+            startActivity(i);
+        }
         String name = prefs.getString("Name", "");
         String surname = prefs.getString("Surname", "");
         TextView info_text = (TextView)findViewById(R.id.info_text);
@@ -134,9 +139,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         } else {
             if (android.os.Build.VERSION.SDK_INT >= 21) {
-                RelativeLayout activityMain = (RelativeLayout)findViewById(R.id.activity_main);
+                /*RelativeLayout activityMain = (RelativeLayout)findViewById(R.id.activity_main);
                 LinearLayout fab2Layout = (LinearLayout)findViewById(R.id.linearLayout10);
-                animateRevealColorFromCoordinates(activityMain, R.color.athmo_cyan , (int) fab2Layout.getX(), (int) fab2Layout.getY());
+                animateRevealColorFromCoordinates(activityMain, R.color.athmo_cyan , (int) fab2Layout.getX(), (int) fab2Layout.getY());*/
                 Intent i = new Intent(this, Athmo.class);
                 startActivity(i);
             } else {

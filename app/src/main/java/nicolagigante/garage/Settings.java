@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import nicolagigante.garage.Contextual_Notifications.AllGeofencesActivity;
 import nicolagigante.garage.SettingsActivities.Athmo_Settings;
 
 public class Settings extends AppCompatActivity {
@@ -61,6 +62,11 @@ public class Settings extends AppCompatActivity {
     public void goToRefresh(View view){
         DialogFragment newFragment = new nicolagigante.garage.SettingsActivities.Reset_Athmo_Dialog(this);
         newFragment.show(getSupportFragmentManager(), "refresh");
+    }
+
+    public void testButton(View view){
+        Intent i = new Intent(this, AllGeofencesActivity.class);
+        startActivity(i);
     }
 
     @Override

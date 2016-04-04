@@ -30,8 +30,8 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify Garage Settings</string>
     <string name="about">About HomeCloud</string>
-    <string name="version" translatable="false">v5.2 Material</string>
-    <string name="buildversion" translatable="false">Build 27032016</string>
+    <string name="version" translatable="false">v6.0 Material</string>
+    <string name="buildversion" translatable="false">Build 04042016</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About HomeCloud</string>
@@ -77,4 +77,49 @@
     <string name="cant_send_command">Can\'t Send Command.</string>
     <string name="refresh_athmo">Refresh Athmo</string>
 
+    <!-- CONTEXTUAL NOTIFICATIONS STRINGS -->
+    <string name="context_notif">Contextual Notifications</string>
+    <string name="action_delete_all">Delete All Contextual Notifications</string>
+
+    <!-- Dialogs -->
+    <string name="AreYouSure">Are you sure?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Add">Add</string>
+    <string name="Cancel">Cancel</string>
+
+    <!-- Button -->
+    <string name="Button.DeleteGeofence">DELETE</string>
+
+    <!-- Labels -->
+    <string name="Label.Name">Name</string>
+    <string name="Label.Latitude">Latitude</string>
+    <string name="Label.Longitude">Longitude</string>
+    <string name="Label.Radius">Radius</string>
+    <string name="Label.AddGeofence">Add a Contextual Notification</string>
+    <string name="Label.EmptyState">You haven\'t created any Contextual Notifications yet. Tap the plus button to create one.</string>
+
+    <!-- Hints -->
+    <string name="Hint.Name">Name</string>
+    <string name="Hint.Latitude" formatted="false">Latitude (%3.1f\u00B0 to %3.1f\u00B0)</string>
+    <string name="Hint.Longitude" formatted="false">Longitude (%4.1f\u00B0 to %4.1f\u00B0) </string>
+    <string name="Hint.Radius" formatted="false">Radius (%3.2f to %3.1f km, typically 0.1 km)</string>
+
+    <!-- Units -->
+    <string name="Units.Degrees">\u00B0</string>
+    <string name="Units.Kilometers">km</string>
+
+    <!-- Notification -->
+    <string name="Notification.Title">HomeCloud</string>
+    <string name="Notification.Text">It looks like you\'re near %1$s.</string>
+
+    <!-- Toast -->
+    <string name="Toast.Validation">Please enter valid data for all fields</string>
+    <string name="Toast.Error">There was an error. Please try again.</string>
+
+    <string name="newfeature">New in HomeCloud 6.</string>
+    <string name="context_intro">Get timely notifications based on your location.</string>
+    <string name="context_desc">Have you ever forgot to open your garage and crashed your car into it? Hopefully not, but with the all-new Contextual Notifications you\'ll be able to open your garage right on your wrist or with just one tap. These notifications will appear only when you\'re close to your garage, and won\'t disturb you in other times.</string>
+    <string name="context_notyet">You can always configure Contextual Notifications by going in <b>Settings > Contextual Notifications</b>.</string>
+    <string name="gotit">Got it.</string>
 </resources>

@@ -7,8 +7,8 @@ android {
         applicationId "nicolagigante.garage"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 520
-        versionName '5.2'
+        versionCode 600
+        versionName '6.0'
     }
     buildTypes {
         release {
@@ -36,4 +36,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:22.2.1'
     compile 'com.github.PhilJay:MPAndroidChart:v2.2.0'
     compile 'org.jsoup:jsoup:1.7.3'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.github.shell-software:fab:1.0.5'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
 }

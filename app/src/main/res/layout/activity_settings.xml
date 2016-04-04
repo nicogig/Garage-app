@@ -71,6 +71,18 @@
             android:paddingLeft="16dp"
             style="?android:attr/borderlessButtonStyle"
             android:onClick="goToAthmoSettings" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/context_notif"
+            android:onClick="testButton"
+            android:textColor="#546e7a"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/button" />
+
         <android.support.v7.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -103,6 +115,7 @@
             android:paddingLeft="16dp"
             style="?android:attr/borderlessButtonStyle"
             android:onClick="goToAbout" />
+
     </LinearLayout>
 
     </ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="nicolagigante.garage.MainActivity"
+    tools:deviceIds="wear_square">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="@drawable/ripple"
+        android:layout_alignBottom="@+id/circle"
+        android:layout_alignEnd="@+id/circle"
+        android:layout_alignStart="@+id/circle"
+        android:layout_alignTop="@+id/circle" />
+
+        <android.support.wearable.view.CircledImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/circle"
+            android:src="@drawable/ic_key"
+            app:circle_radius="50dp"
+            app:circle_color="#4db6ac"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center" />
+
+
+</RelativeLayout>

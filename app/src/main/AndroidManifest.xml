@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -161,20 +162,35 @@
             android:name=".SettingsActivities.Reset_Athmo"
             android:screenOrientation="portrait"
             android:theme="@style/AthmosSettings" />
-        <activity android:name=".NotificationsIntro"
+        <activity
+            android:name=".NotificationsIntro"
             android:noHistory="true"
-            android:screenOrientation="portrait"></activity>
-
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Contextual_Notifications.AllGeofencesActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:label="@string/context_notif"
-            android:theme="@style/AppTheme_ctx"
             android:parentActivityName=".Settings"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden">
-        </activity>
+            android:theme="@style/AppTheme_ctx"></activity>
 
-        <service android:name=".Contextual_Notifications.AreWeThereIntentService"/>
+        <service android:name=".Contextual_Notifications.AreWeThereIntentService" />
+
+        <receiver
+            android:name=".Contextual_Notifications.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".ListenerServiceFromWear">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

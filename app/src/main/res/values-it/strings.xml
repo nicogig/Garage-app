@@ -68,5 +68,32 @@
     <string name="command_sent">Comando Inviato!</string>
     <string name="cant_send_command">Non posso inviare il comando.</string>
     <string name="refresh_athmo">Riavvia Athmo</string>
+    <string name="Add">Aggiungi</string>
+    <string name="AreYouSure">Sei sicuro?</string>
+    <string name="Button.DeleteGeofence">ELIMINA</string>
+    <string name="Cancel">Cancella</string>
+   <!-- <string name="Hint.Latitude">Latitudine (%3.1f\u00B0 a %3.1f\u00B0)</string>-->
+    <string name="Hint.Name">Nome</string>
+    <string name="Label.AddGeofence">Aggiungi una Notifica Contestuale</string>
+    <string name="Label.Latitude">Latitudine</string>
+    <string name="Label.EmptyState">Non hai ancora creato una Notifica Contestuale. Premi il bottone "+" per iniziare.</string>
+    <string name="Label.Name">Nome</string>
+    <string name="Label.Longitude">Longitudine</string>
+    <string name="No"></string>
+    <string name="Label.Radius">Raggio</string>
+    <string name="Notification.Text">Sembra che tu sia vicino a %1$s.</string>
+    <string name="Toast.Error">C\'è stato un errore. Per favore, riprova.</string>
+    <string name="Toast.Validation">Per favore, scrivi dati validi in tutti i campi</string>
+    <string name="newfeature">Nuovo in HomeCloud 6.</string>
+    <string name="gotit">Fatto!</string>
+    <string name="context_notyet">Puoi sempre configurare le Notifiche Contestuali andndo in <b>Impostazioni > Notifiche Contestuali</b>.</string>
+    <string name="context_notif">Notifiche Contestuali</string>
+    <string name="context_intro">Ottieni notifiche tempestive basate sulla tua posizione.</string>
+    <string name="Yes">Si</string>
+    <string name="action_delete_all">Elimina tutte le Notifiche Contestuali</string>
+    <string name="Units.Kilometers"></string>
+    <!--<string name="Hint.Radius">Raggio (%3.2f a %3.1f km, tipicamente 0.1 km)</string>
+    <string name="Hint.Longitude">Longitudine (%4.1f\u00B0 a %4.1f\u00B0)</string>-->
+    <string name="context_desc">Ti sei mai dimenticato di aprire il tuo garage mentre parcheggiavi? Speriamo di no, ma meglio essere cauti. Con le nuove Notifiche Contestuali potrai aprire il tuo garage direttamente dal tuo polso o con solo un tap. Queste notifiche appariranno solo quando sei vicino al tuo garage, e non ti disturberanno in altri momenti.</string>
 
 </resources>

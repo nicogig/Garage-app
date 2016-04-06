@@ -19,7 +19,7 @@ public class Athmo_Wizard_Homescreen extends AppCompatActivity {
     }
 
     public void goToWizard(View view){
-        Intent i = new Intent(this, Athmo_Wizard_Setup.class);
+        Intent i = new Intent(this, nicolagigante.garage.Home_Wizard.Athmo_Wizard_Setup.class);
         startActivity(i);
     }
 

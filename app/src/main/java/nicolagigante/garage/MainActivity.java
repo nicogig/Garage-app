@@ -1,7 +1,6 @@
 package nicolagigante.garage;
 
 import android.animation.Animator;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -10,7 +9,6 @@ import android.preference.PreferenceManager;
 import android.support.annotation.ColorRes;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -19,9 +17,7 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -39,6 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nicolagigante.garage.Home_Wizard.Athmo_Wizard_Homescreen;
+import nicolagigante.garage.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -55,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (prefs.getBoolean(UPDATE_CONTEXT, true)) {
-            Intent i = new Intent(this, NotificationsIntro.class);
+            Intent i = new Intent(this, nicolagigante.garage.NotificationsIntro.class);
             startActivity(i);
         }
         String name = prefs.getString("Name", "");
@@ -123,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToSettings (View view){
-        Intent i = new Intent(this, Settings.class);
+        Intent i = new Intent(this, nicolagigante.garage.Settings.class);
         startActivity(i);
     }
 

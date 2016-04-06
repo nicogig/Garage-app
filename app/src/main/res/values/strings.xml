@@ -30,8 +30,8 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify Garage Settings</string>
     <string name="about">About HomeCloud</string>
-    <string name="version" translatable="false">v6.0 Material</string>
-    <string name="buildversion" translatable="false">Build 04042016</string>
+    <string name="version" translatable="false">v6.0.3 Material</string>
+    <string name="buildversion" translatable="false">Build 06042016</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About HomeCloud</string>
@@ -84,7 +84,7 @@
     <!-- Dialogs -->
     <string name="AreYouSure">Are you sure?</string>
     <string name="Yes">Yes</string>
-    <string name="No">No</string>
+    <string name="No" translatable="false">No</string>
     <string name="Add">Add</string>
     <string name="Cancel">Cancel</string>
 
@@ -106,11 +106,11 @@
     <string name="Hint.Radius" formatted="false">Radius (%3.2f to %3.1f km, typically 0.1 km)</string>
 
     <!-- Units -->
-    <string name="Units.Degrees">\u00B0</string>
-    <string name="Units.Kilometers">km</string>
+    <string name="Units.Degrees" translatable="false">\u00B0</string>
+    <string name="Units.Kilometers" translatable="false">km</string>
 
     <!-- Notification -->
-    <string name="Notification.Title">HomeCloud</string>
+    <string name="Notification.Title" translatable="false">HomeCloud</string>
     <string name="Notification.Text">It looks like you\'re near %1$s.</string>
 
     <!-- Toast -->

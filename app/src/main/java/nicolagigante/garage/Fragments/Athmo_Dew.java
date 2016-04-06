@@ -1,6 +1,5 @@
 package nicolagigante.garage.Fragments;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.AsyncTask;

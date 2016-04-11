@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Garage</string>
-    <string name="hello_round">Hello Round World!</string>
-    <string name="hello_square">Hello Square World!</string>
+    <string name="hello_round" translatable="false">Hello Round World!</string>
+    <string name="hello_square" translatable="false">Hello Square World!</string>
+    <string name="msg_sent">Command Sent!</string>
+    <string name="msg_not_sent">Command Not Sent.</string>
 </resources>

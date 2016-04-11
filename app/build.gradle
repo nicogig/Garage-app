@@ -8,8 +8,8 @@ android {
         applicationId "nicolagigante.garage"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 603
-        versionName '6.0.3'
+        versionCode 604
+        versionName '6.0.4'
     }
     buildTypes {
         release {

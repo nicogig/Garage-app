@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Garage</string>
+    <string name="msg_sent">Comando Inviato!</string>
+    <string name="msg_not_sent">Comando non Inviato.</string>
+</resources>

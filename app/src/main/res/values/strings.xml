@@ -30,8 +30,8 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify Garage Settings</string>
     <string name="about">About HomeCloud</string>
-    <string name="version" translatable="false">v6.0.3 Material</string>
-    <string name="buildversion" translatable="false">Build 06042016</string>
+    <string name="version" translatable="false">v6.0.4 Material</string>
+    <string name="buildversion" translatable="false">Build 11042016</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About HomeCloud</string>

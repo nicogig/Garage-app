@@ -7,13 +7,13 @@
     tools:context="nicolagigante.garage.MainActivity"
     tools:deviceIds="wear_round">
 
-    <android.support.wearable.view.CircledImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/circle"
+        android:src="@drawable/ic_key"
+        android:background="@drawable/ripple"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_key"
-        app:circle_radius="50dp"
-        app:circle_color="#4db6ac"/>
+        android:layout_gravity="center" />
 </RelativeLayout>

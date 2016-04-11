@@ -1,11 +1,15 @@
 package nicolagigante.garage;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.wearable.activity.ConfirmationActivity;
 import android.support.wearable.view.CircledImageView;
 import android.support.wearable.view.WatchViewStub;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -40,7 +44,7 @@ public class MainActivity extends Activity implements GoogleApiClient.Connection
         stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
-                CircledImageView mCircledImageView = (CircledImageView) stub.findViewById(R.id.circle);
+                ImageButton mCircledImageView = (ImageButton) stub.findViewById(R.id.circle);
 
                 //Listener to send the message (it is just an example)
                 mCircledImageView.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +74,19 @@ public class MainActivity extends Activity implements GoogleApiClient.Connection
                             if (!sendMessageResult.getStatus().isSuccess()) {
                                 Log.e("TAG", "Failed to send message with status code: "
                                         + sendMessageResult.getStatus().getStatusCode());
+                                Intent intent = new Intent(getApplicationContext(), ConfirmationActivity.class);
+                                intent.putExtra(ConfirmationActivity.EXTRA_ANIMATION_TYPE,
+                                        ConfirmationActivity.FAILURE_ANIMATION);
+                                intent.putExtra(ConfirmationActivity.EXTRA_MESSAGE,
+                                        getString(R.string.msg_not_sent));
+                                startActivity(intent);
+                            } else {
+                                Intent intent = new Intent(getApplicationContext(), ConfirmationActivity.class);
+                                intent.putExtra(ConfirmationActivity.EXTRA_ANIMATION_TYPE,
+                                        ConfirmationActivity.SUCCESS_ANIMATION);
+                                intent.putExtra(ConfirmationActivity.EXTRA_MESSAGE,
+                                        getString(R.string.msg_sent));
+                                startActivity(intent);
                             }
                         }
                     }

@@ -1,3 +1,4 @@
+![alt text][logo]
 [logo]: https://raw.githubusercontent.com/nicogig/Garage-app/master/ic_launcher.png "HomeCloud 6 Logo."
 
 # HomeCloud. Your house, anywhere in the world.

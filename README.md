@@ -1,3 +1,5 @@
+[logo]: https://raw.githubusercontent.com/nicogig/Garage-app/master/ic_launcher.png "HomeCloud 6 Logo."
+
 # HomeCloud. Your house, anywhere in the world.
 Welcome to the HomeCloud GitHub Project app!
 HomeCloud's intentions are to connect your house to the cloud, making it "smarter" via Arduino and the dedicated app on your smartphone or via the websites of the Homecloud Platform Kits (HPKs).

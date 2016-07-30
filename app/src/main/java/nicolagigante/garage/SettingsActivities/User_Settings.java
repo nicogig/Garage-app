@@ -15,7 +15,6 @@ import android.view.View;
 import android.widget.EditText;
 
 import nicolagigante.garage.R;
-import nicolagigante.garage.Settings;
 
 public class User_Settings extends AppCompatActivity {
 

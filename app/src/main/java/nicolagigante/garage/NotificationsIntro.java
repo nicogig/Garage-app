@@ -19,18 +19,6 @@ public class NotificationsIntro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications_intro);
-        VideoView mVideoView = (VideoView)findViewById(R.id.videoview);
-        String uriPath = "android.resource://nicolagigante.garage/"+R.raw.context_not;
-        Uri uri = Uri.parse(uriPath);
-        mVideoView.setVideoURI(uri);
-        mVideoView.requestFocus();
-        mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mp.setLooping(true);
-            }
-        });
-        mVideoView.start();
 
     }
 

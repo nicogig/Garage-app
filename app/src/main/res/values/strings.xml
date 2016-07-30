@@ -30,8 +30,8 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify Garage Settings</string>
     <string name="about">About HomeCloud</string>
-    <string name="version" translatable="false">v6.0.4 Material</string>
-    <string name="buildversion" translatable="false">Build 11042016</string>
+    <string name="version" translatable="false">v7.0 </string>
+    <string name="buildversion" translatable="false">Build 30072016_3</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About HomeCloud</string>
@@ -59,6 +59,7 @@
     <string name="athmomodify">Modify Athmo Settings</string>
     <string name="title_athmo_settings">Athmo Settings</string>
     <string name="athmo" translatable="false">Athmo</string>
+    <string name="chekcathmo">Check your Athmo</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
@@ -97,7 +98,7 @@
     <string name="Label.Longitude">Longitude</string>
     <string name="Label.Radius">Radius</string>
     <string name="Label.AddGeofence">Add a Contextual Notification</string>
-    <string name="Label.EmptyState">You haven\'t created any Contextual Notifications yet. Tap the plus button to create one.</string>
+    <string name="Label.EmptyState">You haven\'t created any Contextual Notifications yet. Tap the "+" button to create one.</string>
 
     <!-- Hints -->
     <string name="Hint.Name">Name</string>
@@ -117,9 +118,41 @@
     <string name="Toast.Validation">Please enter valid data for all fields</string>
     <string name="Toast.Error">There was an error. Please try again.</string>
 
-    <string name="newfeature">New in HomeCloud 6.</string>
+    <string name="newfeature">New in HomeCloud 7.</string>
     <string name="context_intro">Get timely notifications based on your location.</string>
     <string name="context_desc">Have you ever forgot to open your garage and crashed your car into it? Hopefully not, but with the all-new Contextual Notifications you\'ll be able to open your garage right on your wrist or with just one tap. These notifications will appear only when you\'re close to your garage, and won\'t disturb you in other times.</string>
     <string name="context_notyet">You can always configure Contextual Notifications by going in <b>Settings > Contextual Notifications</b>.</string>
     <string name="gotit">Got it.</string>
+
+    <string-array name="settings_list">
+        <item>
+            Modify User Settings
+        </item>
+        <item>
+            Modify Garage Settings
+        </item>
+        <item>
+            Modify Garage Name
+        </item>
+        <item>
+            Modify Athmo Settings
+        </item>
+        <item>
+            Contextual Notifications
+        </item>
+        <item>
+            Reset App
+        </item>
+        <item>
+            Refresh Athmo
+        </item>
+        <item>
+            About Homecloud
+        </item>
+    </string-array>
+
+    <string name="uhoh" translatable="false">Uh, Oh!</string>
+    <string name="embarrassing">Well, this is embarrassing.</string>
+    <string name="errorposition">In order to make Contextual Notifications work, we need access to your location. Please give us permission and try again.</string>
+    <string name="givepermission">Give Permission</string>
 </resources>

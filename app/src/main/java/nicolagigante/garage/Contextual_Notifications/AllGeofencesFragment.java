@@ -1,8 +1,12 @@
 package nicolagigante.garage.Contextual_Notifications;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -100,9 +104,14 @@ public class AllGeofencesFragment extends Fragment implements AddGeofenceFragmen
     viewHolder.actionButton.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        AddGeofenceFragment dialogFragment = new AddGeofenceFragment();
-        dialogFragment.setListener(AllGeofencesFragment.this);
-        dialogFragment.show(getActivity().getSupportFragmentManager(), "AddGeofenceFragment");
+          if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+              Intent i = new Intent(getContext(), PermissionDenied.class);
+              startActivity(i);
+          } else {
+              AddGeofenceFragment dialogFragment = new AddGeofenceFragment();
+              dialogFragment.setListener(AllGeofencesFragment.this);
+              dialogFragment.show(getActivity().getSupportFragmentManager(), "AddGeofenceFragment");
+          }
       }
     });
       allGeofencesAdapter = new AllGeofencesAdapter(GeofenceController.getInstance().getNamedGeofences());

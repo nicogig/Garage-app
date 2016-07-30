@@ -61,42 +61,33 @@
             android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Settings"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="nicolagigante.garage.MainActivity" />
-        </activity>
-        <activity
             android:name=".SettingsActivities.User_Settings"
             android:label="@string/title_activity_user__settings"
-            android:parentActivityName=".Settings"
+            android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
             android:theme="@style/UserSettings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="nicolagigante.garage.Settings" />
+                android:value="nicolagigante.garage.SettingsActivities.Settings" />
         </activity>
         <activity
             android:name=".SettingsActivities.Garage_Settings"
             android:label="@string/title_activity_garage__settings"
-            android:parentActivityName=".Settings"
+            android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
             android:theme="@style/GarageSettings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="nicolagigante.garage.Settings" />
+                android:value="nicolagigante.garage.SettingsActivities.Settings" />
         </activity>
         <activity
             android:name=".SettingsActivities.About_App"
             android:label="@string/title_activity_about__app"
-            android:parentActivityName=".Settings"
+            android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="nicolagigante.garage.Settings" />
+                android:value="nicolagigante.garage.SettingsActivities.Settings" />
         </activity>
         <activity
             android:name=".FirstTime.NameGarage"
@@ -107,12 +98,12 @@
         <activity
             android:name=".SettingsActivities.GarageNameSettings"
             android:label="@string/title_activity_garage_name_settings"
-            android:parentActivityName=".Settings"
+            android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
             android:theme="@style/GarageNameSettings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="nicolagigante.garage.Settings" />
+                android:value="nicolagigante.garage.SettingsActivities.Settings" />
         </activity>
         <activity
             android:name=".FirstTime.Intro_Athmo"
@@ -132,7 +123,7 @@
         <activity
             android:name=".SettingsActivities.Athmo_Settings"
             android:label="@string/title_athmo_settings"
-            android:parentActivityName=".Settings"
+            android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
             android:theme="@style/AthmosSettings" />
         <activity
@@ -170,9 +161,10 @@
             android:name=".Contextual_Notifications.AllGeofencesActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/context_notif"
-            android:parentActivityName=".Settings"
+            android:noHistory="true"
+            android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme_ctx"></activity>
+            android:theme="@style/AppTheme_ctx" />
 
         <service android:name=".Contextual_Notifications.AreWeThereIntentService" />
 
@@ -191,6 +183,23 @@
                 <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
             </intent-filter>
         </service>
+
+        <activity
+            android:name=".SettingsActivities.Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Contextual_Notifications.PermissionDenied"
+            android:label="@string/uhoh"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_ctx">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nicolagigante.garage.MainActivity" />
+        </activity>
+        <activity android:name=".EasterEgg"></activity>
     </application>
 
 </manifest>

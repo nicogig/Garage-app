@@ -1,5 +1,6 @@
 package nicolagigante.garage.SettingsActivities;
 
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.support.design.widget.Snackbar;
@@ -11,9 +12,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import nicolagigante.garage.EasterEgg;
 import nicolagigante.garage.R;
 
 public class About_App extends AppCompatActivity {
+
+    int clickcount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +32,22 @@ public class About_App extends AppCompatActivity {
     }
 
     public void easterEgg(View view){
-        Snackbar
-                .make(findViewById(R.id.activity_about), R.string.snackbar_egg, Snackbar.LENGTH_SHORT)
-                .show();
+        clickcount = clickcount+1;
+        if (clickcount == 5){
+            Snackbar
+                    .make(view, "There is nothing to see here, why are you clicking?", Snackbar.LENGTH_SHORT)
+                    .show();
+        }else if (clickcount == 10){
+            Snackbar
+                    .make(view, "Well, you're still clicking. Time for a shameless plug to MatPat over at Game Theory!", Snackbar.LENGTH_SHORT)
+                    .show();
+        }
+        else if (clickcount == 16){
+
+           Intent i = new Intent(this, EasterEgg.class);
+           startActivity(i);
+            clickcount = 0;
+       }
     }
 
     @Override

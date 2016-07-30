@@ -13,10 +13,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import nicolagigante.garage.R;
-import nicolagigante.garage.Settings;
 
 public class Garage_Settings extends AppCompatActivity {
 

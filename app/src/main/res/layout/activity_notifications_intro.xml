@@ -10,15 +10,16 @@
     tools:context="nicolagigante.garage.NotificationsIntro"
     android:background="#0b9677">
 
-    <VideoView
-        android:id="@+id/videoview"
+    <pl.droidsonroids.gif.GifImageView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="345dp"
-        android:layout_alignParentTop="true"
-        android:foregroundGravity="center_vertical" />
+        android:layout_marginBottom="350dp"
+        android:id="@+id/videoview"
+        android:src="@drawable/context"
+        android:layout_alignParentTop="true" />
+
 
     <TextView
         android:layout_width="wrap_content"

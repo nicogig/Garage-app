@@ -17,9 +17,12 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -40,6 +43,7 @@ import nicolagigante.garage.R;
 
 public class MainActivity extends AppCompatActivity {
 
+    ListView list;
     public static final String FIRST_RUN_ATHMOS = "FirstRunAthmos";
     public static final String UPDATE_CONTEXT = "UpdateContext";
     public String status;
@@ -63,7 +67,34 @@ public class MainActivity extends AppCompatActivity {
         TextView garage_name = (TextView)findViewById(R.id.textView6);
         String open = getString(R.string.garagedoor);
         String garagename = prefs.getString("GarageName", "");
-        garage_name.setText(open + " " + garagename);
+        final String[] web = {
+                open + " " + garagename,
+                getString(R.string.chekcathmo),
+        };
+        Integer[] imageId = {
+                R.drawable.ic_vpn_key_white_36dp,
+                R.drawable.athmo_warm_homescreen,
+        };
+        CustomList adapter = new
+                CustomList(MainActivity.this, web, imageId);
+        list=(ListView)findViewById(R.id.list);
+        list.setAdapter(adapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                switch(position){
+                    case 0: doOpen();
+                            break;
+                    case 1: doOpenAthmos();
+                            break;
+                }
+                //Toast.makeText(MainActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
+
+            }
+        });
+       // garage_name.setText(open + " " + garagename);
     }
 
     @Override
@@ -120,17 +151,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToSettings (View view){
-        Intent i = new Intent(this, nicolagigante.garage.Settings.class);
+        Intent i = new Intent(this, nicolagigante.garage.SettingsActivities.Settings.class);
         startActivity(i);
     }
 
-    public void doOpen(View view){
+    public void doOpen(){
         new MyAsyncTask().execute("hey");
     }
 
-    public void doOpenAthmos(View view){
+    public void doOpenAthmos(){
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        FloatingActionButton fab_athmo = (FloatingActionButton)findViewById(R.id.fab2);
+        //FloatingActionButton fab_athmo = (FloatingActionButton)findViewById(R.id.fab2);
         if (prefs.getBoolean(FIRST_RUN_ATHMOS, true)) {
             Intent i = new Intent(this, Athmo_Wizard_Homescreen.class);
             startActivity(i);

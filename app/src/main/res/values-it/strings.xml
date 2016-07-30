@@ -95,5 +95,12 @@
     <!--<string name="Hint.Radius">Raggio (%3.2f a %3.1f km, tipicamente 0.1 km)</string>
     <string name="Hint.Longitude">Longitudine (%4.1f\u00B0 a %4.1f\u00B0)</string>-->
     <string name="context_desc">Ti sei mai dimenticato di aprire il tuo garage mentre parcheggiavi? Speriamo di no, ma meglio essere cauti. Con le nuove Notifiche Contestuali potrai aprire il tuo garage direttamente dal tuo polso o con solo un tap. Queste notifiche appariranno solo quando sei vicino al tuo garage, e non ti disturberanno in altri momenti.</string>
+    <string name="Hint.Latitude" formatted="false">Latitudine (%3.1f\u00B0 to %3.1f\u00B0)</string>
+    <string name="Hint.Longitude" formatted="false">Longitudine (%4.1f\u00B0 to %4.1f\u00B0)</string>
+    <string name="Hint.Radius" formatted="false">Raggio (%3.2f to %3.1f km, tipicamente 0.1 km)</string>
+    <string name="embarrassing">Ooops, questo è imbarazzante.</string>
+    <string name="errorposition">Per poter far funzionare le Notifiche Contestuali, abbiamo bisogno di accedere alla tua posizione. Per favore, autorizzaci e riprova.</string>
+    <string name="chekcathmo">Controlla il tuo Athmo</string>
+    <string name="givepermission">Autorizza</string>
 
 </resources>

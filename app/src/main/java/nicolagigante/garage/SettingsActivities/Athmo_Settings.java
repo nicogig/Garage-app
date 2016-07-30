@@ -14,7 +14,6 @@ import android.view.View;
 import android.widget.EditText;
 
 import nicolagigante.garage.R;
-import nicolagigante.garage.Settings;
 
 public class Athmo_Settings extends AppCompatActivity {
 

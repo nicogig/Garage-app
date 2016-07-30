@@ -1,6 +1,7 @@
 package nicolagigante.garage.Contextual_Notifications;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
@@ -8,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +18,7 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 
 import nicolagigante.garage.R;
 
-public class AllGeofencesActivity extends ActionBarActivity {
+public class AllGeofencesActivity extends AppCompatActivity {
 
   // region Overrides
     private int MY_PERMISSIONS_ACCESS_FINE_LOCATION = 1;
@@ -48,12 +50,30 @@ public class AllGeofencesActivity extends ActionBarActivity {
           //                                          int[] grantResults)
           // to handle the case where the user grants the permission. See the documentation
           // for ActivityCompat#requestPermissions for more details.
-          ActivityCompat.requestPermissions(this,
+          /*ActivityCompat.requestPermissions(this,
                   new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
-                  MY_PERMISSIONS_ACCESS_FINE_LOCATION);
+                  MY_PERMISSIONS_ACCESS_FINE_LOCATION);*/
+
       }
     GeofenceController.getInstance().init(this);
   }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        if (grantResults.length > 0
+                && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+            // permission was granted, yay! Do the
+            // contacts-related task you need to do.
+
+        } else {
+            Log.d("Hm", "What.");
+            Intent i = new Intent(this, PermissionDenied.class);
+            startActivity(i);
+            // permission denied, boo! Disable the
+            // functionality that depends on this permission.
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

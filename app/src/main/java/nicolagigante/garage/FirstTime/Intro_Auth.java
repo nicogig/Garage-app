@@ -3,6 +3,8 @@ package nicolagigante.garage.FirstTime;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.support.v4.app.DialogFragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,14 +32,19 @@ public class Intro_Auth extends AppCompatActivity {
         EditText edtxs = (EditText)(findViewById(R.id.passedit));
         String ip = edtx.getText().toString();
         String pass = edtxs.getText().toString();
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putString("IP", ip);
-        editor.apply();
-        editor.putString("Pass", pass);
-        editor.apply();
-        Intent i = new Intent(this, NameGarage.class);
-        startActivity(i);
+        if (ip.isEmpty() || pass.isEmpty()){
+            DialogFragment newFragment = new nicolagigante.garage.FirstTime.NoEmptyDialog(getApplicationContext());
+            newFragment.show(getSupportFragmentManager(), "uhoh");
+        } else {
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putString("IP", ip);
+            editor.apply();
+            editor.putString("Pass", pass);
+            editor.apply();
+            Intent i = new Intent(this, NameGarage.class);
+            startActivity(i);
+        }
     }
 
 

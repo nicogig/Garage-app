@@ -41,6 +41,6 @@ dependencies {
     compile 'org.jsoup:jsoup:1.7.3'
     compile 'com.google.code.gson:gson:2.4'
     compile 'com.github.shell-software:fab:1.0.5'
-    compile 'com.google.android.gms:play-services-location:8.4.0'
+    compile 'com.google.android.gms:play-services-location:9.2.1'
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.17'
 }

@@ -63,6 +63,7 @@
         <activity
             android:name=".SettingsActivities.User_Settings"
             android:label="@string/title_activity_user__settings"
+            android:noHistory="true"
             android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
             android:theme="@style/UserSettings">
@@ -75,6 +76,7 @@
             android:label="@string/title_activity_garage__settings"
             android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
+            android:noHistory="true"
             android:theme="@style/GarageSettings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -83,6 +85,7 @@
         <activity
             android:name=".SettingsActivities.About_App"
             android:label="@string/title_activity_about__app"
+            android:noHistory="true"
             android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait">
             <meta-data
@@ -98,6 +101,7 @@
         <activity
             android:name=".SettingsActivities.GarageNameSettings"
             android:label="@string/title_activity_garage_name_settings"
+            android:noHistory="true"
             android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
             android:theme="@style/GarageNameSettings">
@@ -123,6 +127,7 @@
         <activity
             android:name=".SettingsActivities.Athmo_Settings"
             android:label="@string/title_athmo_settings"
+            android:noHistory="true"
             android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
             android:theme="@style/AthmosSettings" />
@@ -152,6 +157,7 @@
         <activity
             android:name=".SettingsActivities.Reset_Athmo"
             android:screenOrientation="portrait"
+            android:noHistory="true"
             android:theme="@style/AthmosSettings" />
         <activity
             android:name=".NotificationsIntro"
@@ -192,12 +198,12 @@
             android:name=".Contextual_Notifications.PermissionDenied"
             android:label="@string/uhoh"
             android:noHistory="true"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme_ctx">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="nicolagigante.garage.MainActivity" />
+                android:value="nicolagigante.garage.SettingsActivities.Settings" />
         </activity>
         <activity android:name=".EasterEgg"></activity>
     </application>

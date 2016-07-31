@@ -155,4 +155,5 @@
     <string name="embarrassing">Well, this is embarrassing.</string>
     <string name="errorposition">In order to make Contextual Notifications work, we need access to your location. Please give us permission and try again.</string>
     <string name="givepermission">Give Permission</string>
+    <string name="dialog_no_empty">You can\'t leave this field empty! Please input the right data before proceeding</string>
 </resources>

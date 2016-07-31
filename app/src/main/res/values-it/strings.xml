@@ -102,5 +102,6 @@
     <string name="errorposition">Per poter far funzionare le Notifiche Contestuali, abbiamo bisogno di accedere alla tua posizione. Per favore, autorizzaci e riprova.</string>
     <string name="chekcathmo">Controlla il tuo Athmo</string>
     <string name="givepermission">Autorizza</string>
+    <string name="dialog_no_empty">Non puoi lasciare questo campo vuoto! Digita qualcosa e procedi.</string>
 
 </resources>

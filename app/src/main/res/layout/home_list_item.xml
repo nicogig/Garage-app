@@ -13,16 +13,32 @@
         android:layout_margin="24dp"
         android:id="@+id/linearLayout5">
 
-        <android.support.design.widget.FloatingActionButton
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/fab"
-            android:clickable="false"
-            android:scaleType="fitCenter"
-            android:tint="@color/primary"
-            app:backgroundTint="#ffffff"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/backfab"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:tint="@color/primary"
+                android:background="@drawable/circle_white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/fab"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:tint="@color/primary"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
 
         <TextView
             android:layout_width="wrap_content"

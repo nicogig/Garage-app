@@ -30,7 +30,7 @@ public class CustomList extends ArrayAdapter<String> {
         LayoutInflater inflater = context.getLayoutInflater();
         View rowView= inflater.inflate(R.layout.home_list_item, null, true);
         TextView txtTitle = (TextView) rowView.findViewById(R.id.textView6);
-        FloatingActionButton fab = (FloatingActionButton) rowView.findViewById(R.id.fab);
+        ImageView fab = (ImageView) rowView.findViewById(R.id.fab);
         txtTitle.setText(web[position]);
         fab.setImageResource(imageId[position]);
         return rowView;

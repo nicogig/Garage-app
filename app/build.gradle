@@ -7,9 +7,9 @@ android {
     defaultConfig {
         applicationId "nicolagigante.garage"
         minSdkVersion 16
-        targetSdkVersion 23
-        versionCode 700
-        versionName '7.0.0'
+        targetSdkVersion 24
+        versionCode 701
+        versionName '7.0.1'
     }
     buildTypes {
         release {

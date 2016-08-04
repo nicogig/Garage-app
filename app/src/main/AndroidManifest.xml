@@ -74,9 +74,9 @@
         <activity
             android:name=".SettingsActivities.Garage_Settings"
             android:label="@string/title_activity_garage__settings"
+            android:noHistory="true"
             android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
-            android:noHistory="true"
             android:theme="@style/GarageSettings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -153,11 +153,15 @@
 
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
+			<intent-filter>
+			<action android:name="android.intent.action.VIEW" />
+			<data android:scheme="garage" />
+			</intent-filter>
         </activity>
         <activity
             android:name=".SettingsActivities.Reset_Athmo"
-            android:screenOrientation="portrait"
             android:noHistory="true"
+            android:screenOrientation="portrait"
             android:theme="@style/AthmosSettings" />
         <activity
             android:name=".NotificationsIntro"
@@ -205,7 +209,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nicolagigante.garage.SettingsActivities.Settings" />
         </activity>
-        <activity android:name=".EasterEgg"></activity>
+        <activity android:name=".EasterEgg" />
+        <activity android:name=".QuickOpen_Discover"></activity>
     </application>
 
 </manifest>

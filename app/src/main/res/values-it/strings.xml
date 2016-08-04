@@ -103,5 +103,7 @@
     <string name="chekcathmo">Controlla il tuo Athmo</string>
     <string name="givepermission">Autorizza</string>
     <string name="dialog_no_empty">Non puoi lasciare questo campo vuoto! Digita qualcosa e procedi.</string>
+    <string name="quickdiscover">Hai aperto velocemente il tuo garage!</string>
+    <string name="discover_why">Hai appena aperto o chiuso il tuo garage con Quick Unlock. È semplice e veloce, non richede l\'apertura dell\'app e funziona con NFC, Scorciatoia Veloce, Notifiche Contestuali e Android Wear.</string>
 
 </resources>

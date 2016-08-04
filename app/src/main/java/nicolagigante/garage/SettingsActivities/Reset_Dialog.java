@@ -52,6 +52,8 @@ public class Reset_Dialog extends DialogFragment {
                         editor.apply();
                         editor.putBoolean("UpdateContext", true);
                         editor.apply();
+						editor.putBoolean("QuickDiscover", true);
+                        editor.apply();
                         editor.putString("IPAthmo", "");
                         editor.apply();
                         Intent i = new Intent(mContext, Intro.class);

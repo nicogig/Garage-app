@@ -6,7 +6,7 @@ android {
     buildToolsVersion "23.0.2"
     defaultConfig {
         applicationId "nicolagigante.garage"
-        minSdkVersion 22
+        minSdkVersion 23
         targetSdkVersion 23
         versionCode 110
         versionName '1.1.0'

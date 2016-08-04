@@ -30,8 +30,8 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify Garage Settings</string>
     <string name="about">About HomeCloud</string>
-    <string name="version" translatable="false">v7.0.1</string>
-    <string name="buildversion" translatable="false">Build 01082016_2</string>
+    <string name="version" translatable="false">v7.0.2</string>
+    <string name="buildversion" translatable="false">Build 04082016_1 </string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About HomeCloud</string>
@@ -156,4 +156,6 @@
     <string name="errorposition">In order to make Contextual Notifications work, we need access to your location. Please give us permission and try again.</string>
     <string name="givepermission">Give Permission</string>
     <string name="dialog_no_empty">You can\'t leave this field empty! Please input the right data before proceeding</string>
+    <string name="quickdiscover">You\'ve Quick Opened your Garage!</string>
+    <string name="discover_why">You\'ve just opened or closed your garage with Quick Unlock. It is fast and easy, does not require opening the app and works via NFC, Quick Shortcut, Contextual Notifications and Android Wear.</string>
 </resources>

@@ -2,6 +2,7 @@ package nicolagigante.garage;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -39,6 +40,12 @@ public class QuickOpen extends Activity {
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, R.string.snackbar_text, duration);
         toast.show();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(nicolagigante.garage.QuickOpen.this);
+        if (prefs.getBoolean("QuickDiscover", true)){
+            Intent i = new Intent(this, QuickOpen_Discover.class);
+            startActivity(i);
+            this.finish();
+        }
         this.finish();
     }
 

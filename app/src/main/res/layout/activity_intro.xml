@@ -44,7 +44,7 @@
             android:layout_alignParentStart="false"
             android:textAlignment="center"
             android:textColor="#ffffff"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
 
     </LinearLayout>
 </RelativeLayout>

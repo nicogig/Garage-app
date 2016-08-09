@@ -21,7 +21,7 @@
 
         <EditText
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:id="@+id/view2"
             android:hint="@string/namehint"
             android:textColorHint="@color/white"
@@ -31,7 +31,7 @@
 
         <EditText
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:id="@+id/view3"
             android:hint="@string/surnamehint"
             android:textColorHint="@color/white"
@@ -71,7 +71,7 @@
             android:layout_marginLeft="15dp" />
     </LinearLayout>
 
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/view"

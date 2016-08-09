@@ -23,7 +23,7 @@ public class About_App extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about__app);
-        final Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+        final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back_white_24dp);
         upArrow.setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbarabout);
         setSupportActionBar(toolbar);

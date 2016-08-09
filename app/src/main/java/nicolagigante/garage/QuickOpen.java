@@ -34,7 +34,7 @@ public class QuickOpen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.d("QO", "onCreate" );
         super.onCreate(savedInstanceState);
-       // setContentView(R.layout.activity_qo);
+        setContentView(R.layout.activity_qo);
         new MyAsyncTask().execute("hey");
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_SHORT;

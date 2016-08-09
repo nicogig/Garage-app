@@ -7,7 +7,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.ColorRes;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -22,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -36,9 +35,9 @@ import org.apache.http.message.BasicNameValuePair;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import nicolagigante.garage.Home_Wizard.Athmo_Wizard_Homescreen;
-import nicolagigante.garage.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -47,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
     public static final String FIRST_RUN_ATHMOS = "FirstRunAthmos";
     public static final String UPDATE_CONTEXT = "UpdateContext";
     public String status;
-    private RelativeLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,16 +57,22 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(this, nicolagigante.garage.NotificationsIntro.class);
             startActivity(i);
         }
-        String name = prefs.getString("Name", "");
-        String surname = prefs.getString("Surname", "");
+        final String[] greetings = {
+                getString(R.string.greetingmain),
+                getString(R.string.main_greeting1),
+                getString(R.string.main_greeting2),
+                getString(R.string.main_greeting3),
+                getString(R.string.main_greeting4),
+                getString(R.string.main_greeting5) + " " + prefs.getString("Name", "") + "!"
+        };
+        Random random = new Random();
+        int index = random.nextInt(greetings.length);
+        TextView greet = (TextView)findViewById(R.id.textView8);
+        greet.setText(greetings[index]);
         TextView info_text = (TextView)findViewById(R.id.info_text);
-        String hi = getString(R.string.himain);
-        info_text.setText( hi + " " + name + "!");
-        TextView garage_name = (TextView)findViewById(R.id.textView6);
-        String open = getString(R.string.garagedoor);
-        String garagename = prefs.getString("GarageName", "");
+        info_text.setText( getString(R.string.himain) + " " + prefs.getString("Name", "") + "!");
         final String[] web = {
-                open + " " + garagename,
+                getString(R.string.garagedoor) + " " + prefs.getString("GarageName", ""),
                 getString(R.string.chekcathmo),
         };
         Integer[] imageId = {

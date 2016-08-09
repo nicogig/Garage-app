@@ -12,6 +12,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="HomeCloud"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -69,7 +70,7 @@
             android:theme="@style/UserSettings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="nicolagigante.garage.SettingsActivities.Settings" />
+                android:value="nicolagigante.garage.SettingsActivities.ModifyAppSettings" />
         </activity>
         <activity
             android:name=".SettingsActivities.Garage_Settings"
@@ -80,7 +81,7 @@
             android:theme="@style/GarageSettings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="nicolagigante.garage.SettingsActivities.Settings" />
+                android:value="nicolagigante.garage.SettingsActivities.ModifyGarageSettings" />
         </activity>
         <activity
             android:name=".SettingsActivities.About_App"
@@ -107,7 +108,7 @@
             android:theme="@style/GarageNameSettings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="nicolagigante.garage.SettingsActivities.Settings" />
+                android:value="nicolagigante.garage.SettingsActivities.ModifyGarageSettings" />
         </activity>
         <activity
             android:name=".FirstTime.Intro_Athmo"
@@ -118,6 +119,8 @@
         <activity
             android:name=".Home_Wizard.Athmo_Wizard_Homescreen"
             android:label="@string/title_activity_athmo__wizard__homescreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
             android:theme="@style/IntroAthmo" />
         <activity
             android:name=".FirstTime.Intro_Athmo_Auth"
@@ -128,9 +131,12 @@
             android:name=".SettingsActivities.Athmo_Settings"
             android:label="@string/title_athmo_settings"
             android:noHistory="true"
-            android:parentActivityName=".SettingsActivities.Settings"
             android:screenOrientation="portrait"
-            android:theme="@style/AthmosSettings" />
+            android:theme="@style/AthmosSettings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nicolagigante.garage.SettingsActivities.ModifyGarageSettings" />
+        </activity>
         <activity
             android:name=".Athmo"
             android:label="@string/athmo"
@@ -153,10 +159,11 @@
 
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
-			<intent-filter>
-			<action android:name="android.intent.action.VIEW" />
-			<data android:scheme="garage" />
-			</intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="garage" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".SettingsActivities.Reset_Athmo"
@@ -197,7 +204,8 @@
         <activity
             android:name=".SettingsActivities.Settings"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Contextual_Notifications.PermissionDenied"
             android:label="@string/uhoh"
@@ -210,7 +218,31 @@
                 android:value="nicolagigante.garage.SettingsActivities.Settings" />
         </activity>
         <activity android:name=".EasterEgg" />
-        <activity android:name=".QuickOpen_Discover"></activity>
+        <activity android:name=".QuickOpen_Discover" />
+        <activity
+            android:name=".SettingsActivities.ModifyAppSettings"
+            android:label="@string/app_settings"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nicolagigante.garage.SettingsActivities.Settings" />
+        </activity>
+        <activity
+            android:name=".SettingsActivities.ModifyGarageSettings"
+            android:label="@string/garage_settings"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nicolagigante.garage.SettingsActivities.Settings" />
+        </activity>
+        <activity
+            android:name=".SettingsActivities.ModifyAthmoSettings"
+            android:label="@string/athmomodify"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nicolagigante.garage.SettingsActivities.Settings" />
+        </activity>
     </application>
 
 </manifest>

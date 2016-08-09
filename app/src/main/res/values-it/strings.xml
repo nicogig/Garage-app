@@ -105,5 +105,23 @@
     <string name="dialog_no_empty">Non puoi lasciare questo campo vuoto! Digita qualcosa e procedi.</string>
     <string name="quickdiscover">Hai aperto velocemente il tuo garage!</string>
     <string name="discover_why">Hai appena aperto o chiuso il tuo garage con Quick Unlock. È semplice e veloce, non richede l\'apertura dell\'app e funziona con NFC, Scorciatoia Veloce, Notifiche Contestuali e Android Wear.</string>
+    <string name="app_settings">Modifica Impostazioni dell\'app</string>
+    <string name="garage_settings">Modifica Impostazioni di Garage</string>
+    <string name="athmo_settings">Modifica Impostazioni di Athmo</string>
+    <string name="app_sett_desc">Cambia Nome, Resetta l\'App...</string>
+    <string name="ath_sett_desc">Cambia IP, Riavvia Athmo</string>
+    <string name="athmo_ip_desc">Cambia l\'IP di Athmo</string>
+    <string name="cntx_desc">Aggiungi o Rimuovi Luoghi</string>
+    <string name="gar_sett_desc">Cambia il Nome di Garage, L\'IP...</string>
+    <string name="garage_ip_desc">Cambia l\'IP e la Password di Garage</string>
+    <string name="garage_name_desc">Cambia il nomignolo del tuo Garage</string>
+    <string name="refresh_desc">Riavvia Athmo se non funziona correttamente</string>
+    <string name="reset_desc">Ripristina HomeCloud alle condizioni di fabbrica</string>
+    <string name="user_desc">Cambia il tuo Nome e Cognome</string>
+    <string name="main_greeting5">Ci incontriamo di nuovo,</string>
+    <string name="main_greeting4">Puoi anche usare QuickOpen, lo sapevi?</string>
+    <string name="main_greeting3">La BatCaverna non era così smart.</string>
+    <string name="main_greeting2">Ora con più Athmo!</string>
+    <string name="main_greeting1">Hey tu! Vuoi aprire il tuo Garage?</string>
 
 </resources>

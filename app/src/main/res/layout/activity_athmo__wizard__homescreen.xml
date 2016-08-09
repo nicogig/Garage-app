@@ -7,7 +7,7 @@
     tools:context=".Home_Wizard.Athmo_Wizard_Homescreen"
     android:background="#26c6da">
 
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/view"
@@ -20,7 +20,7 @@
         android:textColor="#ffffff"
         android:onClick="goToWizard" />
 
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/view2"

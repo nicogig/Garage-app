@@ -7,7 +7,7 @@
     tools:context=".FirstTime.Intro"
     android:background="@color/cyan5">
 
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/view"

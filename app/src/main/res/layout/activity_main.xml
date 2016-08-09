@@ -31,6 +31,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:id="@+id/imageButton"
+        android:contentDescription="@string/action_settings"
         android:background="@drawable/cog_settings"
         android:onClick="goToSettings"
         android:layout_alignParentTop="true"
@@ -60,9 +61,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/greetingmain"
             android:id="@+id/textView8"
-            android:textSize="22sp"
+            android:textSize="21sp"
             android:textColor="#ffffff"
             android:layout_below="@+id/imageButton"
             android:layout_alignLeft="@+id/info_text"
@@ -81,72 +81,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/view8">
         </ListView>
-
-   <!-- <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_margin="24dp"
-        android:id="@+id/linearLayout5">
-
-        <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/fab"
-            android:src="@drawable/ic_vpn_key_white_36dp"
-            android:scaleType="fitCenter"
-            android:tint="@color/primary"
-            android:onClick="doOpen"
-            app:backgroundTint="#ffffff"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text="@string/garagedoor"
-            android:id="@+id/textView6"
-            android:layout_marginLeft="16dp"
-            android:gravity="center_vertical"
-            android:textColor="#ffffff"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout10"
-        android:layout_below="@+id/linearLayout5"
-        android:layout_alignLeft="@+id/linearLayout5"
-        android:layout_alignStart="@+id/linearLayout5">
-
-        <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/fab2"
-            android:src="@drawable/athmo_warm_homescreen"
-            android:scaleType="fitCenter"
-            android:tint="@color/primary"
-            android:elevation="0dp"
-            android:onClick="doOpenAthmos"
-            app:backgroundTint="#ffffff"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text="Check your Athmo"
-            android:id="@+id/textView9"
-            android:layout_marginLeft="16dp"
-            android:gravity="center_vertical"
-            android:textColor="#ffffff"
-            android:textSize="16sp" />
-
-    </LinearLayout> -->
 
     <ImageView
         android:layout_width="fill_parent"

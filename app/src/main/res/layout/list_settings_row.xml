@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/rowTextView"
-    android:layout_width="fill_parent"
-    android:layout_height="60dp"
-    android:textColor="#546e7a"
-    android:gravity="center_vertical"
-    android:paddingLeft="16dp"
-    android:textAllCaps="true"
-/>
+
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/imageView6"
+        android:tint="#546e7a"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:weightSum="1"
+        android:layout_gravity="center_vertical">
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rowTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#546e7a"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.15"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#546e7a"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:id="@+id/txtDescription"
+            android:textSize="10sp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+</LinearLayout>

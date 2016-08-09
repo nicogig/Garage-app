@@ -27,7 +27,7 @@ public class AllGeofencesActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_all_geofences);
-      final Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+      final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back_white_24dp);
       upArrow.setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
       if (Build.VERSION.SDK_INT >= 21) {
           getSupportActionBar().setElevation(0);

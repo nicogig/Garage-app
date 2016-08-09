@@ -6,7 +6,7 @@
     android:background="#008377"
     tools:context="nicolagigante.garage.QuickOpen_Discover">
 
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/view"

@@ -28,10 +28,10 @@
     <string name="title_activity_settings">Settings</string>
     <string name="reset">Reset App</string>
     <string name="usermodify">Modify User Settings</string>
-    <string name="servermodify">Modify Garage Settings</string>
+    <string name="servermodify">Modify IP and Password</string>
     <string name="about">About HomeCloud</string>
-    <string name="version" translatable="false">v7.0.2</string>
-    <string name="buildversion" translatable="false">Build 04082016_1 </string>
+    <string name="version" translatable="false">7.0.2</string>
+    <string name="buildversion" translatable="false">Build 09082016_3</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About HomeCloud</string>
@@ -158,4 +158,22 @@
     <string name="dialog_no_empty">You can\'t leave this field empty! Please input the right data before proceeding</string>
     <string name="quickdiscover">You\'ve Quick Opened your Garage!</string>
     <string name="discover_why">You\'ve just opened or closed your garage with Quick Unlock. It is fast and easy, does not require opening the app and works via NFC, Quick Shortcut, Contextual Notifications and Android Wear.</string>
+    <string name="app_settings">Modify App Settings</string>
+    <string name="garage_settings">Modify Garage Settings</string>
+    <string name="athmo_settings">Modify IP</string>
+    <string name="app_sett_desc">Change Name, Reset App...</string>
+    <string name="gar_sett_desc">Change Garage Name, IP...</string>
+    <string name="ath_sett_desc">Change IP, Refresh Athmo</string>
+    <string name="cntx_desc">Add or Remove Locations</string>
+    <string name="user_desc">Change your Name and Surname</string>
+    <string name="reset_desc">Restore HomeCloud to its factory settings</string>
+    <string name="garage_ip_desc">Change your Garage\'s IP and Password</string>
+    <string name="garage_name_desc">Change your Garage\'s friendly name</string>
+    <string name="athmo_ip_desc">Change your Athmo\'s IP</string>
+    <string name="refresh_desc">Restart your Athmo if it isn\'t working properly</string>
+    <string name="main_greeting1">Howdy there! Fancy opening yo\' Garage?</string>
+    <string name="main_greeting2">Now with more Athmo goodness!</string>
+    <string name="main_greeting3">The BatCave wasn\'t this smart.</string>
+    <string name="main_greeting4">You can also QuickOpen, y\'know it right?</string>
+    <string name="main_greeting5">We meet again,</string>
 </resources>

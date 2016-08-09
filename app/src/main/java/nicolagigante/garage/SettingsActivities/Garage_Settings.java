@@ -22,7 +22,7 @@ public class Garage_Settings extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_garage__settings);
-        final Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+        final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back_white_24dp);
         upArrow.setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbargarage);
         setSupportActionBar(toolbar);
@@ -48,7 +48,7 @@ public class Garage_Settings extends AppCompatActivity {
         editor.apply();
         editor.putString("Pass", pass);
         editor.apply();
-        Intent i = new Intent(this, Settings.class);
+        Intent i = new Intent(this, ModifyGarageSettings.class);
         startActivity(i);
     }
 

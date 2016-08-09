@@ -12,7 +12,7 @@
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="fill_parent"
-        android:layout_height="250dp"
+        android:layout_height="210dp"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="true"
         android:id="@+id/videoview"
@@ -57,7 +57,7 @@
         android:textColor="#ffffff"
         android:textSize="17dp" />
 
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/view"
@@ -70,7 +70,7 @@
         android:textColor="#ffffff"
         android:onClick="goToWizard" />
 
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/view2"

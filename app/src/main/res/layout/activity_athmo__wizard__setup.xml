@@ -30,12 +30,12 @@
             android:layout_height="wrap_content"
             android:text="http://"
             android:id="@+id/textView12"
-            android:textSize="15dp"
+            android:textSize="16sp"
             android:textColor="#ffffff" />
 
         <EditText
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:id="@+id/ipeditatmo"
             android:hint="@string/iphint"
             android:textColorHint="@color/white"
@@ -78,7 +78,7 @@
             android:paddingLeft="@dimen/activity_horizontal_margin" />
     </LinearLayout>
 
-    <android.support.v7.widget.AppCompatButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/view"

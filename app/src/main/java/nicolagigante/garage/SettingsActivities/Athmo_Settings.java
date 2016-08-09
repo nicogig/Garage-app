@@ -21,7 +21,7 @@ public class Athmo_Settings extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_athmo__settings);
-        final Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+        final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back_white_24dp);
         upArrow.setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbargarage);
         setSupportActionBar(toolbar);
@@ -40,7 +40,7 @@ public class Athmo_Settings extends AppCompatActivity {
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("IPAthmo", athmoip);
         editor.apply();
-        Intent i = new Intent(this, Settings.class);
+        Intent i = new Intent(this, ModifyAthmoSettings.class);
         startActivity(i);
     }
 
@@ -49,12 +49,6 @@ public class Athmo_Settings extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        switch (item.getItemId()) {
-
-            case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
-                return true;
-        }
 
         return super.onOptionsItemSelected(item);
     }

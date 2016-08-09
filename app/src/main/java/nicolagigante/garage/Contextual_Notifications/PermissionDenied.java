@@ -21,7 +21,7 @@ public class PermissionDenied extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_permission_denied);
-        final Drawable home = getResources().getDrawable(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+        final Drawable home = getResources().getDrawable(R.drawable.ic_arrow_back_white_24dp);
         home.setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
         if (Build.VERSION.SDK_INT >= 21) {
             getSupportActionBar().setElevation(0);

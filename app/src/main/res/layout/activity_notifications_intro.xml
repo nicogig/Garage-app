@@ -8,7 +8,7 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     tools:context="nicolagigante.garage.NotificationsIntro"
-    android:background="#0b9677">
+    android:background="@color/primary_dark">
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="fill_parent"

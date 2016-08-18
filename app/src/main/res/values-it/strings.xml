@@ -123,5 +123,7 @@
     <string name="main_greeting3">La BatCaverna non era così smart.</string>
     <string name="main_greeting2">Ora con più Athmo!</string>
     <string name="main_greeting1">Hey tu! Vuoi aprire il tuo Garage?</string>
+    <string name="safetywarning">Potresti mettere la tua casa a rischio.</string>
+    <string name="safetywarning_desc">HomeCloud non è stato installato da una origine conosciuta. Questo potrebbe mettere in pericolo la tua casa, dato che l\'app potrebbe essere stata compromessa. Se comprendi i rischi, continua pure. Questo messaggio verrà visualizzato ogni volta che apri l\'app. </string>
 
 </resources>

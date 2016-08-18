@@ -30,8 +30,8 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify IP and Password</string>
     <string name="about">About HomeCloud</string>
-    <string name="version" translatable="false">7.0.4</string>
-    <string name="buildversion" translatable="false">Build 09082016_5</string>
+    <string name="version" translatable="false">7.0.6</string>
+    <string name="buildversion" translatable="false">Build 18082016_6</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About HomeCloud</string>
@@ -176,4 +176,6 @@
     <string name="main_greeting3">The BatCave wasn\'t this smart.</string>
     <string name="main_greeting4">You can also QuickOpen, y\'know it right?</string>
     <string name="main_greeting5">We meet again,</string>
+    <string name="safetywarning">You might put your home at risk.</string>
+    <string name="safetywarning_desc">HomeCloud was not installed from a trusted source. This might put your house at risk since the app might have been hacked. If you understand the risks, press the "Got It" button. This warning will be displayed every time you launch this app.</string>
 </resources>

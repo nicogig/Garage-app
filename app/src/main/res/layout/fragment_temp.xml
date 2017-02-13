@@ -11,12 +11,66 @@
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/chart"
         android:layout_width="fill_parent"
-        android:layout_height="200dp" />
+        android:layout_height="220dp" />
 
-    <WebView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#26c6da"
-        android:id="@+id/webView" />
+        android:text="@string/latest_measurements"
+        android:textColor="#ffffff"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLatest"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18sp"
+        android:text="00 °C"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLatestF"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18sp"
+        android:text="00 °F"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:text="@string/taken_on"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18sp"
+        android:text="01-01-1975"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18sp"
+        android:text="00:00:00"/>
 
 </LinearLayout>

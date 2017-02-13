@@ -30,8 +30,8 @@
     <string name="usermodify">Modify User Settings</string>
     <string name="servermodify">Modify IP and Password</string>
     <string name="about">About HomeCloud</string>
-    <string name="version" translatable="false">7.0.6</string>
-    <string name="buildversion" translatable="false">Build 18082016_6</string>
+    <string name="version" translatable="false">7.1.0</string>
+    <string name="buildversion" translatable="false">Build 13022017_1</string>
     <string name="title_activity_user__settings">User Settings</string>
     <string name="title_activity_garage__settings">Garage Settings</string>
     <string name="title_activity_about__app">About HomeCloud</string>
@@ -178,4 +178,6 @@
     <string name="main_greeting5">We meet again,</string>
     <string name="safetywarning">You might put your home at risk.</string>
     <string name="safetywarning_desc">HomeCloud was not installed from a trusted source. This might put your house at risk since the app might have been hacked. If you understand the risks, press the "Got It" button. This warning will be displayed every time you launch this app.</string>
+    <string name="latest_measurements">Latest Measurements</string>
+    <string name="taken_on">Taken On</string>
 </resources>

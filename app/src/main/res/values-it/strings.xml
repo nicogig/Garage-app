@@ -100,7 +100,7 @@
     <string name="Hint.Radius" formatted="false">Raggio (%3.2f to %3.1f km, tipicamente 0.1 km)</string>
     <string name="embarrassing">Ooops, questo è imbarazzante.</string>
     <string name="errorposition">Per poter far funzionare le Notifiche Contestuali, abbiamo bisogno di accedere alla tua posizione. Per favore, autorizzaci e riprova.</string>
-    <string name="chekcathmo">Controlla il tuo Athmo</string>
+    <string name="chekcathmo">Controlla il tuo Athmo (con AthmoCloud)</string>
     <string name="givepermission">Autorizza</string>
     <string name="dialog_no_empty">Non puoi lasciare questo campo vuoto! Digita qualcosa e procedi.</string>
     <string name="quickdiscover">Hai aperto velocemente il tuo garage!</string>

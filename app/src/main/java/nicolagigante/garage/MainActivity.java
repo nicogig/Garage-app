@@ -37,6 +37,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import nicolagigante.garage.AthmoDirect.DeviceList;
 import nicolagigante.garage.Home_Wizard.Athmo_Wizard_Homescreen;
 
 
@@ -74,10 +75,12 @@ public class MainActivity extends AppCompatActivity {
         final String[] web = {
                 getString(R.string.garagedoor) + " " + prefs.getString("GarageName", ""),
                 getString(R.string.chekcathmo),
+                getString(R.string.checkathmodirect)
         };
         Integer[] imageId = {
                 R.drawable.ic_vpn_key_white_36dp,
                 R.drawable.athmo_warm_homescreen,
+                R.drawable.athmo_warm_homescreen
         };
         CustomList adapter = new
                 CustomList(MainActivity.this, web, imageId);
@@ -92,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
                     case 0: doOpen();
                             break;
                     case 1: doOpenAthmos();
+                            break;
+                    case 2: doOpenAthmoDirect();
                             break;
                 }
                 //Toast.makeText(MainActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
@@ -180,6 +185,18 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(this, Athmo.class);
                 startActivity(i);
             }
+        }
+    }
+
+    public void doOpenAthmoDirect(){
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        //FloatingActionButton fab_athmo = (FloatingActionButton)findViewById(R.id.fab2);
+        if (prefs.getBoolean(FIRST_RUN_ATHMOS, true)) {
+            Intent i = new Intent(this, Athmo_Wizard_Homescreen.class);
+            startActivity(i);
+        } else {
+                Intent i = new Intent(this, DeviceList.class);
+                startActivity(i);
         }
     }
 

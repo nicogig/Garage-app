@@ -72,10 +72,12 @@ public class Athmo_Temp extends Fragment implements OnChartValueSelectedListener
         txtTempString = string.split("~");
         Log.d("Athmo", txtTempString[0]);
         String[] tempValues = new String[txtTempString.length];
+        String[] goldenHour = new String[txtTempString.length];
         ArrayList<BarEntry> yVals = new ArrayList<>();
         ArrayList<String> xVals = new ArrayList<>();
         for (int i = 0; i < txtTempString.length; i++){
             tempValues[i] = txtTempString[i].substring(7, 12);
+            goldenHour[i] = txtTempString[i].substring(52, 60);
         }
        // tempValues[0] = txtTempString[0].substring(7, 12);
         int temp=0;
@@ -85,7 +87,7 @@ public class Athmo_Temp extends Fragment implements OnChartValueSelectedListener
         }
         for (int f; i < tempValues.length; i++) {
             yVals.add(new BarEntry(Float.parseFloat(tempValues[i]), temp));
-            xVals.add(String.valueOf(temp));
+            xVals.add(goldenHour[i]);
             temp++;
         }
 

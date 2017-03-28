@@ -30,7 +30,8 @@ public class Athmo extends AppCompatActivity {
             R.drawable.ic_action_temperature,
             R.drawable.ic_action_athmo_warm_homescreen,
             R.drawable.ic_action_pressure,
-            R.drawable.ic_action_dew_point
+            R.drawable.ic_action_dew_point,
+            R.drawable.ic_action_heat
     };
 
     @Override
@@ -56,16 +57,18 @@ public class Athmo extends AppCompatActivity {
     private void setupTabIcons() {
         tabLayout.getTabAt(0).setIcon(tabIcons[0]);
         tabLayout.getTabAt(1).setIcon(tabIcons[1]);
-        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
+        tabLayout.getTabAt(2).setIcon(tabIcons[4]);
         tabLayout.getTabAt(3).setIcon(tabIcons[3]);
+        //tabLayout.getTabAt(4).setIcon(tabIcons[4]);
     }
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Athmo_Temp(), "Temperature");
         adapter.addFragment(new Athmo_Humidity(), "Humidity");
-        adapter.addFragment(new Athmo_Pressure(), "Pressure");
+        adapter.addFragment(new Athmo_Pressure(), "Heat Index");
         adapter.addFragment(new Athmo_Dew(), "Dew Point");
+        //adapter.addFragment(new Athmo_Dew(), "Heat Index");
         viewPager.setAdapter(adapter);
     }
 

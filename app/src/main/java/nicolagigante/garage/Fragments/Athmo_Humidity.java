@@ -1,5 +1,6 @@
 package nicolagigante.garage.Fragments;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.AsyncTask;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.TextView;
 
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.BarChart;
@@ -45,48 +47,55 @@ import nicolagigante.garage.ReloadWebView;
 public class Athmo_Humidity extends Fragment implements OnChartValueSelectedListener, OnChartGestureListener {
 
     public String text;
+    public String textLatest;
     private String[] txtTempString;
-	private BarChart chart;
+    private Context mContext;
+    private BarChart chart;
+    private String tempString;
+    private TextView latestText;
+    private int a = 0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_hum, container, false);
-		chart = (BarChart)view.findViewById(R.id.chart3);
+        chart = (BarChart) view.findViewById(R.id.chart3);
         MyMarkerView mv = new MyMarkerView(getActivity(), R.layout.custom_marker_view, "%");
         chart.setMarkerView(mv);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         String ipathmo = prefs.getString("IPAthmo", "");
-        new ParseURL().execute(new String[]{"http://"+ ipathmo +"/hum.txt"});
-        final WebView webView = (WebView)view.findViewById(R.id.webView);
-        webView.loadUrl("http://" + ipathmo + "/" + getString(R.string.humlink));
-        webView.setWebViewClient(new WebViewClient() {
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                webView.loadUrl("about:blank");
-
-            }
-        });
-        webView.setBackgroundColor(Color.parseColor("#26c6da"));
-       // new ReloadWebView(getActivity(), 4, webView);
+        new ParseURL().execute(new String[]{"http://" + ipathmo + "/athmosync.txt"});
+        new ParseLatest().execute(new String[]{"http://" + ipathmo + "/athmolatest.txt"});
         return view;
     }
 
-    private void parseData(String string, View view){
-        txtTempString = string.split(";");
+
+    private void parseData(String string, View view) {
+        txtTempString = string.split("~");
+        Log.d("Athmo", txtTempString[0]);
+        String[] tempValues = new String[txtTempString.length];
+        String[] goldenHour = new String[txtTempString.length];
         ArrayList<BarEntry> yVals = new ArrayList<>();
         ArrayList<String> xVals = new ArrayList<>();
-        int k;
-        if (txtTempString.length > 48){
-            k = txtTempString.length - 48;
-        } else {
-            k = 0;
+        for (int i = 0; i < txtTempString.length; i++){
+            String[] withoutHash = new String[txtTempString.length];
+               withoutHash[i] = txtTempString[i].replace("#", "");
+                tempValues[i] = withoutHash[i].substring(0, 5);
+            goldenHour[i] = txtTempString[i].substring(52, 60);
+
         }
+        // tempValues[0] = txtTempString[0].substring(7, 12);
         int temp=0;
-        for (int i = k; i < txtTempString.length; i++) {
-            yVals.add(new BarEntry(Float.parseFloat(txtTempString[i]), temp));
-            xVals.add(String.valueOf(temp));
+        int i = 0;
+        if (tempValues.length >= 100){
+            i = tempValues.length / 2;
+        }
+        for (int f; i < tempValues.length; i++) {
+            yVals.add(new BarEntry(Float.parseFloat(tempValues[i]), temp));
+            xVals.add(goldenHour[i]);
             temp++;
         }
-        BarDataSet set1 = new BarDataSet(yVals , "");
+
+        BarDataSet set1 = new BarDataSet(yVals, "");
         set1.setColor(Color.parseColor("#FFFFFF"));
         ArrayList<IBarDataSet> dataSets = new ArrayList<>();
         dataSets.add(set1);
@@ -178,8 +187,7 @@ public class Athmo_Humidity extends Fragment implements OnChartValueSelectedList
     private class ParseURL extends AsyncTask<String, Void, String> {
 
         @Override
-        protected void onPreExecute()
-        {
+        protected void onPreExecute() {
         }
 
         @Override
@@ -200,22 +208,75 @@ public class Athmo_Humidity extends Fragment implements OnChartValueSelectedList
 
 
         @Override
-        protected void onPostExecute(String result)
-        {
+        protected void onPostExecute(String result) {
             super.onPostExecute(result);
             if (result != null) {
                 parseData(result, getView());
-            } else {                            try {
-                Snackbar
-                        .make(getView().findViewById(R.id.fragment_temp), R.string.snackbar_text_nodata, Snackbar.LENGTH_LONG)
-                        .show();
-            } catch(java.lang.NullPointerException e){
-                Log.e("Athmo", "NullPointer");
+            } else {
+                try {
+                    Snackbar
+                            .make(getView().findViewById(R.id.fragment_temp), R.string.snackbar_text_nodata, Snackbar.LENGTH_LONG)
+                            .show();
+                } catch(java.lang.NullPointerException e){
+                    Log.e("Athmo", "NullPointer");
+                }
+
             }
 
-            }         }
+        }
+
 
     }
 
+    private class ParseLatest extends AsyncTask<String, Void, String> {
+
+        @Override
+        protected void onPreExecute() {
+        }
+
+        @Override
+        protected String doInBackground(String... strings) {
+
+            StringBuffer buffer = new StringBuffer();
+            try {
+                Log.d("JSwa", "Connecting to [" + strings[0] + "]");
+                Document doc = Jsoup.connect(strings[0]).get();
+                Log.d("JSwa", "Connected to [" + strings[0] + "]");
+                textLatest = doc.body().text(); // "An example link"
+                buffer.append(textLatest);
+            } catch (Throwable t) {
+                t.printStackTrace();
+            }
+            return textLatest;
+        }
+
+
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+            if (result != null) {
+                TextView latest = (TextView) getView().findViewById(R.id.textLatestHum);
+                latest.setText(textLatest.substring(1, 6) + " %");
+                TextView date = (TextView) getView().findViewById(R.id.date);
+                date.setText(textLatest.substring(41, 51));
+                TextView time = (TextView) getView().findViewById(R.id.time);
+                time.setText(textLatest.substring(52, 60));
+            } else {
+                try {
+                    Snackbar
+                            .make(getView().findViewById(R.id.fragment_temp), R.string.snackbar_text_nodata, Snackbar.LENGTH_LONG)
+                            .show();
+                } catch(java.lang.NullPointerException e){
+                    Log.e("Athmo", "NullPointer");
+                }
+
+            }
+
+        }
+
+
+    }
 
 }
+
+

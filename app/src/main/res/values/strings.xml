@@ -59,7 +59,7 @@
     <string name="athmomodify">Modify Athmo Settings</string>
     <string name="title_athmo_settings">Athmo Settings</string>
     <string name="athmo" translatable="false">Athmo</string>
-    <string name="chekcathmo">Check your Athmo</string>
+    <string name="chekcathmo">Check your Athmo (via AthmoCloud)</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
@@ -180,4 +180,5 @@
     <string name="safetywarning_desc">HomeCloud was not installed from a trusted source. This might put your house at risk since the app might have been hacked. If you understand the risks, press the "Got It" button. This warning will be displayed every time you launch this app.</string>
     <string name="latest_measurements">Latest Measurements</string>
     <string name="taken_on">Taken On</string>
+    <string name="checkathmodirect">Check your Athmo (via AthmoDirect)</string>
 </resources>
